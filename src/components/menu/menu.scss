@@ -1,0 +1,87 @@
+.menu-component {
+    position: absolute;
+    padding: 15px 25px;
+    width: 100%;
+    top: 0;
+
+    .brand-logo {
+        position: relative;
+        z-index: 1000;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(0,0,0);
+        transition: 0.5s;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .sidenav {
+        width: 100vw;
+        background-color: rgba(255, 0, 0, 0.8);
+        .item-close {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            .material-icons {
+                font-size: 40px;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+            }
+        }
+        .content-menu {
+            width: 50%;
+            text-align: center;
+            margin: 40vh auto 0;
+            text-transform: uppercase;
+            transition: all 1.5s;
+
+            a {
+                margin-bottom: 25px;
+                color: #fff;
+                font-size: 3.2rem;
+                letter-spacing: 8px;
+                transition: all 1.5s;
+                font-family: 'GalanoGrotesqueBold';
+                cursor: pointer;
+                &:hover {
+                    background: none;
+                }
+            }
+
+            .content-submenu {
+                max-height: 0;
+                overflow: hidden;
+                -webkit-transition: max-height 1.5s;
+                -moz-transition: max-height 1.5s;
+                -ms-transition: max-height 1.5s;
+                -o-transition: max-height 1.5s;
+                transition: max-height 1s;
+                
+                &.active {
+                    max-height: 99rem;
+                }
+            }
+
+            &.active-submenu {
+                margin-top: 20vh;
+                .link-menu {
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidenav-trigger {
+        transition: 0.5s;
+        .material-icons {
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+.sidenav-overlay {
+    background: none;
+}

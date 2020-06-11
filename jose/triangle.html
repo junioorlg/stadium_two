@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+            function firstTriangle( context ) {
+                
+                var initX = 1200;
+                var initY = 310;
+
+                //defino el color de las lineas
+                context.beginPath();
+                context.strokeStyle = "black";
+
+                // primera linea del triangulo
+                context.moveTo( initX, initY ); //defino el punto inicial del triangulo
+                context.lineTo( 1000, 600 ); //me mueve hasta la posicion 100 en el eje X, y me mantengo en la posicion 10 en el eje Y
+
+                // segunda linea del triangulo
+                context.lineTo( 800, 430 );
+
+                // segunda linea del triangulo
+                //context.lineTo( 10, 30 );
+                context.closePath();
+
+                var my_gradient;
+
+                my_gradient = context.createLinearGradient(initX, initY, 900, 525);
+                my_gradient.addColorStop(0, '#2D324D');
+                my_gradient.addColorStop(.2, '#2D324D');
+                my_gradient.addColorStop(.4, '#d49ea3');
+                my_gradient.addColorStop(.6, '#fde9e8');
+                my_gradient.addColorStop(.8, '#fff6f6');
+                my_gradient.addColorStop(1, "white");
+
+                context.fillStyle = my_gradient;
+                context.fill();
+
+                //simula la linea del gradiente
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( 900, 525 );
+                context.closePath();
+
+                //dibuja la linea
+                context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            function secondTriangle( context ) {
+                var initX = 800;
+                var initY = 430;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 1000, 600 );
+                context.lineTo( 750, 660 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 950;
+                var endGradientY = 600;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(0, '#2D324D');
+                my_gradient.addColorStop(.2, '#2D324D');
+                my_gradient.addColorStop(.4, '#d49ea3');
+                my_gradient.addColorStop(.6, '#fde9e8');
+                my_gradient.addColorStop(.8, '#fff6f6');
+                my_gradient.addColorStop(1, "white");
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+            
+            function thirdTriangle( context ) {
+                var initX = 1000;
+                var initY = 600;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 805, 435 );
+                context.lineTo( 690, 500 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 752;
+                var endGradientY = 473;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            function fouthTriangle( context ) {
+                var initX = 690;
+                var initY = 500;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 805, 435 );
+                context.lineTo( 690, 500 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 752;
+                var endGradientY = 473;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            function fifthTriangle( context ) {
+                var initX = 750;
+                var initY = 660;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 805, 435 );
+                context.lineTo( 690, 500 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 752;
+                var endGradientY = 473;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            
+            function firstTriangle2( context ) {
+                
+                var initX = 520;
+                var initY = 10;
+
+                //defino el color de las lineas
+                context.beginPath();
+                context.strokeStyle = "black";
+                
+                context.moveTo( initX, initY );
+                context.lineTo( 119, 130 );
+                context.lineTo( 320, 300 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 220;
+                var endGradientY = 225;
+
+                my_gradient = context.createLinearGradient(initX, initY, endGradientX, endGradientY);
+
+                my_gradient.addColorStop(0, '#2D324D');
+                my_gradient.addColorStop(.2, '#2D324D');
+                my_gradient.addColorStop(.4, '#d49ea3');
+                my_gradient.addColorStop(.6, '#fde9e8');
+                my_gradient.addColorStop(.8, '#fff6f6');
+                my_gradient.addColorStop(1, "white");
+
+                context.fillStyle = my_gradient;
+                context.fill();
+
+                //simula la linea del gradiente
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+                context.closePath();
+
+                //dibuja la linea
+                //context.stroke();
+
+                context.beginPath();
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(initX,initY,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            function secondTriangle2( context ) {
+                var initX = 119;
+                var initY = 130;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 320, 300 );
+                context.lineTo( 70, 360 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 270;
+                var endGradientY = 300;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(0, '#2D324D');
+                my_gradient.addColorStop(.2, '#2D324D');
+                my_gradient.addColorStop(.4, '#d49ea3');
+                my_gradient.addColorStop(.6, '#fde9e8');
+                my_gradient.addColorStop(.8, '#fff6f6');
+                my_gradient.addColorStop(1, "white");
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+            
+            function thirdTriangle2( context ) {
+                var initX = 320 ;
+                var initY = 300 ;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 125, 135 );
+                context.lineTo( 10, 200 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 71;
+                var endGradientY = 172;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(initX,initY,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            function fouthTriangle2( context ) {
+                var initX = 10;
+                var initY = 200;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 125, 135 );
+                context.lineTo( 10, 200 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 71;
+                var endGradientY = 172;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+            
+            function fifthTriangle2( context ) {
+                var initX = 70;
+                var initY = 360;
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.moveTo( initX, initY );
+                context.lineTo( 125, 135 );
+                context.lineTo( 10, 200 );
+                context.closePath();
+
+                var my_gradient;
+                var endGradientX = 71;
+                var endGradientY = 172;
+
+                my_gradient = context.createLinearGradient( initX, initY, endGradientX, endGradientY );
+                my_gradient.addColorStop(  0, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .2, 'rgba(45, 50, 77, 1)' );
+                my_gradient.addColorStop( .4, 'rgba(212, 158, 163, 1)' );
+                my_gradient.addColorStop( .6, 'rgba(200, 82, 89, 0.3)' );
+                my_gradient.addColorStop( .8, 'rgba(255, 246, 246, 0)' );
+                my_gradient.addColorStop(  1, 'rgba(255, 255, 255, 0)' );
+
+                context.fillStyle = my_gradient;
+                context.fill();
+                
+                context.strokeStyle = "#000";
+                context.moveTo( initX, initY );
+                context.lineTo( endGradientX, endGradientY );
+
+                //context.stroke();
+
+                context.beginPath();
+                var X = initX;
+                var Y = initY;
+                context.strokeStyle = "#2D324D";
+                context.fillStyle = "#2D324D";
+                context.arc(X,Y,6,0,2*Math.PI);
+                context.fill();
+                context.stroke();
+            }
+
+            window.onload = function(){
+                /*var screenW = window.innerWidth - 10;
+                var screenH = window.innerHeight - 10;
+
+                var canvas = document.getElementById("myCanvasTriangles");
+
+                canvas.width = screenW;
+                canvas.height = screenH;
+
+                var context = canvas.getContext("2d");
+
+                firstTriangle( context );
+                secondTriangle( context );
+                thirdTriangle( context );
+                fouthTriangle( context );*/
+                /*fifthTriangle( context );*/
+
+                var canvas2 = document.getElementById("myCanvasTriangles2");
+
+                canvas2.width = 530;
+                canvas2.height = 370;
+
+                var context2 = canvas2.getContext("2d");
+
+                firstTriangle2( context2 );
+                secondTriangle2( context2 );
+                thirdTriangle2( context2 );
+                fouthTriangle2( context2 );
+                fifthTriangle2( context2 );
+            };
+        </script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #myCanvasTriangles2 {
+                position: absolute;
+                top: 300px;
+                left: 680px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<canvas id="myCanvasTriangles" style="border: 1px solid black;"></canvas>-->
+        <canvas id="myCanvasTriangles2"></canvas>
+    </body>
+</html>

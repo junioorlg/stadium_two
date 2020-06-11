@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ie dinnextltpro-regular"><!--HEAD MODULE-->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Stadium</title>
+        <meta name="description" content="Global leader in entertainment, sports and fashion">
+        <meta name="fragment" content="!">
+        <meta name="format-detection" content="telephone=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!--link rel="shortcut icon" type="image/x-icon" href="http://img.com/static/img/favicons/favicon.ico"-->
+
+        <link rel="stylesheet" href="IMG_files/style.css">
+        <style>
+            .content-background {
+                position:absolute;
+                width: 1155px;
+                height: 675px;
+        
+                left:0; right:0;
+                top:0; bottom:0;
+                margin:auto;
+                background: url(anii.jpg);
+            }
+        </style>
+    </head>
+    <body class="layout home" style="min-height: 627px; cursor: default;">
+
+        <div class="logo-stadium animate-fade hide">
+            <img src="../../stadium-data/logo_staidum.jpg" alt="">
+        </div>
+
+        <div class="logo-menu animate-fade hide">
+            <img src="../../stadium-data/icon_menu_hamburguesa.jpg" alt="">
+        </div>
+
+        <div class="section-network animate-fade hide">
+            <img src="../../stadium-data/social_network.jpg" alt="">
+        </div>
+        
+        <div class="transition fadeIn loaded">
+            <div class="layout__web">
+                <div class="web__layout web hasLoaded">
+                    <div class="nodeweb animate-fade hide">
+                        <canvas width="2560" height="1000" style="width: 1280px; height: 679px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-background"></div>
+
+        <!--SETTINGS MODULE-->
+        <script src="IMG_files/libs.js"></script>
+        <!--script src="IMG_files/templates.js"></script-->
+        <script src="IMG_files/main_bckp.js"></script>
+        <!--END SETTINGS MODULE-->
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                setTimeout( () => {
+                    var elmsAnimationFade = document.querySelectorAll( '.animate-fade' );
+
+                    [].forEach.call( elmsAnimationFade, function( elm ) {
+                        elm.classList.remove( 'hide' );
+                    });
+
+                }, 2000 )
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesqueBold';
+  src: local('GalanoGrotesqueBold'), url(./fonts/Galano_Grotesque_Bold.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesqueExtraBold';
+  src: local('GalanoGrotesqueExtraBold'), url(./fonts/Galano_Grotesque_Extra_Bold.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: local('GalanoGrotesque'), url(./fonts/Galano_Grotesque.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesqueMedium';
+  src: local('GalanoGrotesqueMedium'), url(./fonts/Galano_Grotesque_Medium.otf) format('truetype');
+}

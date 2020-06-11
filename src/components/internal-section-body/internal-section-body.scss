@@ -1,0 +1,34 @@
+.internal-section-body {
+    float: left;
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-top: 180px;
+    padding-left: 110px;
+
+    h1 {
+        font-family: 'GalanoGrotesqueExtraBold';
+        font-size: 7rem;
+        text-transform: capitalize;
+        margin-bottom: 3.5rem;
+    }
+
+    p {
+        font-family: 'GalanoGrotesque';
+        padding: 0 170px 30px 190px;
+        letter-spacing: 1px;
+    }
+
+    .contactanos {
+        position: absolute;
+        bottom: 100px;
+
+        a {
+            font-family: 'GalanoGrotesqueBold';
+            color: #000;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
+}

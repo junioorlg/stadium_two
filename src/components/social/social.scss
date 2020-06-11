@@ -1,0 +1,24 @@
+.social-component {
+    position: absolute;
+    width: auto;
+    bottom: 370px;
+    right: -280px;
+    z-index: 1000;
+    transform: rotate(270deg);
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 70px;
+            font-size: 1rem;
+            font-family: 'GalanoGrotesqueBold';
+            text-transform: uppercase;
+            
+            .social-link {    
+                color: #000;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+    }
+}

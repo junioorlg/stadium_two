@@ -12,6 +12,7 @@ import {
 import Home from './pages/home/home';
 import Deportes from './pages/internal/deportes/deportes';
 import Eventos from './pages/internal/eventos/eventos';
+import Medios from './pages/internal/medios/medios';
 
 /* style */
 
@@ -31,6 +32,10 @@ class App extends Component {
 
 						<Route path="/eventos">
 							<Eventos />
+						</Route>
+
+						<Route path="/medios">
+							<Medios />
 						</Route>
 					</Switch>
 				</Router>

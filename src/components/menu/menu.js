@@ -10,8 +10,8 @@ import {
 class Menu extends Component {
 
     closeMenu () {
-        var elems = document.querySelectorAll('.sidenav');
-        var instance = M.Sidenav.getInstance(elems);
+        console.log('debe cerrar menu');
+        //var elems = document.querySelectorAll('.sidenav');
     }
 
     render() {
@@ -33,7 +33,7 @@ class Menu extends Component {
                 contentSubMenu.classList.toggle( 'active' );
             });
 
-            var instances = M.Sidenav.init(elems, {
+            M.Sidenav.init(elems, {
                 edge: "right",
                 inDuration: 800,
                 outDuration: 800,
@@ -65,7 +65,7 @@ class Menu extends Component {
                 <Router>
                     <Link to="/">
                         <div className="brand-logo">
-                            <img src={logo} className="responsive-img" />
+                            <img src={logo} className="responsive-img" alt="stadium" />
                         </div>
                     </Link>
 
@@ -75,7 +75,7 @@ class Menu extends Component {
                         </div>
 
                         <div className="content-menu">
-                            <li id="active-submenu" className="link-menu"><a>Servicios</a></li>
+                            <li id="active-submenu" className="link-menu"><a href="collapsible.html">Servicios</a></li>
                             
                             <ul className="content-submenu">
                                 <li className="link-submenu"><Link to="/deportes">Deporte</Link></li>
@@ -90,7 +90,7 @@ class Menu extends Component {
                         </div>
                     </ul>
 
-                    <a href="#" data-target="slide-out" className="sidenav-trigger show-on-large right">
+                    <a href="collapsible.html" data-target="slide-out" className="sidenav-trigger show-on-large right">
                         <i className="material-icons black-text">menu</i>
                     </a>
                 </Router>

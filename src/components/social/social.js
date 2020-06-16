@@ -7,10 +7,10 @@ class Social extends Component {
         return (
             <div className="social-component">
                 <ul>
-                    <li><a className="social-link">instagram</a></li>
-                    <li><a className="social-link">twiter</a></li>
-                    <li><a className="social-link">linkedin</a></li>
-                    <li><a className="social-link">hola@stadium.com</a></li>
+                    <li><a className="social-link" href="google.com">instagram</a></li>
+                    <li><a className="social-link" href="google.com">twiter</a></li>
+                    <li><a className="social-link" href="google.com">linkedin</a></li>
+                    <li><a className="social-link" href="google.com">hola@stadium.com</a></li>
                 </ul>
             </div>
         );

@@ -10,6 +10,9 @@ import './fonts/Galano_Grotesque_Medium.otf';
 import './fonts/Galano_Grotesque_Bold.otf';
 import './fonts/Galano_Grotesque_Extra_Bold.otf';
 
+import "../node_modules/slick-carousel/slick/slick.css"; 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

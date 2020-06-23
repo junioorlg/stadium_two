@@ -13,6 +13,8 @@ import Home from './pages/home/home';
 import Deportes from './pages/internal/deportes/deportes';
 import Eventos from './pages/internal/eventos/eventos';
 import Medios from './pages/internal/medios/medios';
+import Entretenimientos from './pages/internal/entretenimientos/entretenimientos';
+import Contacto from './pages/contacto/contacto';
 
 /* style */
 
@@ -36,6 +38,14 @@ class App extends Component {
 
 						<Route path="/medios">
 							<Medios />
+						</Route>
+
+                        <Route path="/entretenimientos">
+							<Entretenimientos />
+						</Route>
+
+                        <Route path="/contacto">
+							<Contacto />
 						</Route>
 					</Switch>
 				</Router>

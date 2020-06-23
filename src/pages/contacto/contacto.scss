@@ -1,0 +1,33 @@
+
+.container{
+    margin-top: 100px;;
+}
+.contacto-title{
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.contacto-btn-submitter{
+    text-align: right;
+
+    .contacto-link-enviar{
+        font-weight: bold;
+        padding: 0 3px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contacto-title{
+        font-size: 3em;
+    }
+
+    .contacto-btn-submitter{
+        text-align: center;
+
+        .contacto-link-enviar{
+            font-size: 1.4em;
+        }
+    }
+    
+}

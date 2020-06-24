@@ -13,8 +13,9 @@ import Home from './pages/home/home';
 import Deportes from './pages/internal/deportes/deportes';
 import Eventos from './pages/internal/eventos/eventos';
 import Medios from './pages/internal/medios/medios';
-import Entretenimientos from './pages/internal/entretenimientos/entretenimientos';
+import Entretenimientos from './pages/entretenimientos/entretenimientos';
 import Contacto from './pages/contacto/contacto';
+import Estrategias from './pages/estrategias/estrategias';
 
 /* style */
 
@@ -46,6 +47,10 @@ class App extends Component {
 
                         <Route path="/contacto">
 							<Contacto />
+						</Route>
+
+                        <Route path="/estrategias">
+							<Estrategias />
 						</Route>
 					</Switch>
 				</Router>

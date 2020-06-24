@@ -1,6 +1,4 @@
-.entretenimiento-container{
-    padding-top: 120px;
-}
+
 .entretenimiento-title{
     font-weight: bold;
     font-size: 3em;
@@ -10,32 +8,30 @@
     text-decoration-color: black;
     font-weight: bold;
     position: absolute;
-    bottom: 2em;
-    margin-top: 30px;
+    bottom: 4em;
 }
 .entretenimiento-paragraph{
     text-align: justify;
-}
-.entretenimiento-row{
-    display: flex;
+
+    .entretenimiento-row{
+        display: flex;
+    }
 }
 .entretenimiento-col{
     display: flex;
     flex-direction: column;
 }
+//class is general
 .responsive-img{
     width: 100%;
     height: auto;
 }
 
-
 @media screen and (max-width: 600px) {
-    .entretenimiento-container {
-        padding-top: 100px;
-    }
+
     .entretenimiento-subtitle{
         display: inline-block;
-        position: relative;
+        position: static;
     }
 
     .entretenimiento-paragraph{

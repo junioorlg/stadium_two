@@ -16,6 +16,19 @@
     }
 }
 
+.input-field{
+    
+    label{
+        color: #000;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+}
+
+.contacto-paragraph{
+    font-size: 0.9em;
+}
+
 
 @media screen and (max-width: 600px) {
     .contacto-title{
@@ -24,6 +37,7 @@
 
     .contacto-btn-submitter{
         text-align: center;
+        float: none !important;
 
         .contacto-link-enviar{
             font-size: 1.4em;

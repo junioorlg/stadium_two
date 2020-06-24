@@ -17,21 +17,20 @@ function Contacto ( props ) {
                <div className="row">
                    <div className="col m6 s12">
                         <div className="col m12 s6">
-                            <p><strong>Buenos Aires</strong></p>
-                            <p>Sucre 632, 3er Piso</p>
-                            <p>CABA, Argentina</p>
+                            <p className="contacto-paragraph"><strong>Buenos Aires</strong></p>
+                            <p className="contacto-paragraph">Sucre 632, 3er Piso</p>
+                            <p className="contacto-paragraph">CABA, Argentina</p>
                             <br />
                         </div>
                         <div className="col m12 s6">
-                            <p><strong>Sao Paulo</strong></p>
-                            <p>Rua Butanta 510</p>
-                            <p>Pinheiros, Sao Paulo, Brasil</p>
+                            <p className="contacto-paragraph"><strong>Sao Paulo</strong></p>
+                            <p className="contacto-paragraph">Rua Butanta 510</p>
+                            <p className="contacto-paragraph">Pinheiros, Sao Paulo, Brasil</p>
                             <br />
                         </div>
                         <div className="col m12 s12">
-                            <p><strong>info@stadiumglobal.com</strong></p>
-                            <p>+54 11 4787 8700</p>
-                            <p>Pinheiros, Sao Paulo, Brasil</p>
+                            <p className="contacto-paragraph"><strong>info@stadiumglobal.com</strong></p>
+                            <p className="contacto-paragraph">+54 11 4787 8700</p>
                             <br />
                         </div>
                    </div>

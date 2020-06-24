@@ -1,8 +1,8 @@
 import React from 'react'
-import Main from './../../main/main'
+import Main from '../main/main'
 import './entretenimientos.scss'
-import entretenimientoImg1 from '../../../media/entretenimiento/entretenimiento1.png'
-import entretenimientoImg2 from '../../../media/entretenimiento/entretenimiento2.png'
+import entretenimientoImg1 from '../../media/entretenimiento/entretenimiento1.png'
+import entretenimientoImg2 from '../../media/entretenimiento/entretenimiento2.png'
 
 function Entretenimientos ( props ) {
 
@@ -12,7 +12,7 @@ function Entretenimientos ( props ) {
 
     return (
         <Main>
-            <div className="container entretenimiento-container">
+            <div className="container">
 
                 <div className="row hide-on-small-only">
                     <div className="col m5 offset-m2">
@@ -43,7 +43,7 @@ function Entretenimientos ( props ) {
                         <h6 className="entretenimiento-subtitle">{subtitle}</h6>
                     </div>
                     <div className="col s12 m9">
-                        <p className="entretenimiento-paragraph">{paragraph}</p>
+                        <p className="entretenimiento-paragraph ">{paragraph}</p>
                     </div>
                 </div>
 

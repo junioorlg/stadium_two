@@ -1,0 +1,40 @@
+
+.entretenimiento-title{
+    font-weight: bold;
+    font-size: 3em;
+}
+.entretenimiento-subtitle{
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 4em;
+}
+.entretenimiento-paragraph{
+    text-align: justify;
+
+    .entretenimiento-row{
+        display: flex;
+    }
+}
+.entretenimiento-col{
+    display: flex;
+    flex-direction: column;
+}
+//class is general
+.responsive-img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+
+    .entretenimiento-subtitle{
+        display: inline-block;
+        position: static;
+    }
+
+    .entretenimiento-paragraph{
+        font-weight: bold;
+    }
+  }

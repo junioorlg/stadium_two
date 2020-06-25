@@ -1,0 +1,20 @@
+.home-title{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 55px;
+    padding: 25px 25px 0;
+}
+
+.home-link{
+    margin-top: 150px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .home-title{
+        font-size: 1.2em;
+        line-height: normal;
+    }
+}

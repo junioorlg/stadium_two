@@ -11,7 +11,7 @@ function MediosComponent ( props ) {
     return (
         <Main>
             <div className="page-internal component medios">
-                <Gallery pepe={data} />
+                <Gallery data={data} />
             </div>
         </Main>
     );

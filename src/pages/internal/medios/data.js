@@ -5,71 +5,79 @@ export const data =
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-		tipo: 'img',
-		url: 'logo.png',
-		imgSlider: 'https://dummyimage.com/100x100/2b66b3/ffffff'
+		isVideo: true,
+		idYoutube: 'r5dzmx63ORI',
+		imgSlider: './media/gallery/abzurdah_produccion.png',
+		imgPreview: './media/gallery/abzurdah_produccion.png'
 	},
 	{
 		id: 2,
 		name: 'laca laca: pepe',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		tipo: 'video',
-		url: 'youtube_url.com',
-		imgSlider: 'https://dummyimage.com/100x100/b32d2d/ffffff'
+		isVideo: false,
+		idYoutube: '',
+		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
+		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
 		id: 3,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-		tipo: 'img',
-		url: 'logo.png',
-		imgSlider: 'https://dummyimage.com/100x100/2eb32e/ffffff'
+		isVideo: true,
+		idYoutube: '_vP7fDFyPLg',
+		imgSlider: './media/gallery/abzurdah_produccion.png',
+		imgPreview: './media/gallery/abzurdah_produccion.png'
 	},
 	{
 		id: 4,
 		name: 'laca laca: pepe',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		tipo: 'video',
-		url: 'youtube_url.com',
-		imgSlider: 'https://dummyimage.com/100x100/2eb3af/ffffff'
+		isVideo: false,
+		idYoutube: '',
+		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
+		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
 		id: 5,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-		tipo: 'img',
-		url: 'logo.png',
-		imgSlider: 'https://dummyimage.com/100x100/2b66b3/ffffff'
+		isVideo: true,
+		idYoutube: 'r5dzmx63ORI',
+		imgSlider: './media/gallery/abzurdah_produccion.png',
+		imgPreview: './media/gallery/abzurdah_produccion.png'
 	},
 	{
 		id: 6,
 		name: 'laca laca: pepe',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		tipo: 'video',
-		url: 'youtube_url.com',
-		imgSlider: 'https://dummyimage.com/100x100/b32d2d/ffffff'
+		isVideo: false,
+		idYoutube: '',
+		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
+		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
 		id: 7,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-		tipo: 'img',
-		url: 'logo.png',
-		imgSlider: 'https://dummyimage.com/100x100/2eb32e/ffffff'
+		isVideo: true,
+		idYoutube: '_vP7fDFyPLg',
+		imgSlider: './media/gallery/abzurdah_produccion.png',
+		imgPreview: './media/gallery/abzurdah_produccion.png'
 	},
 	{
 		id: 8,
 		name: 'laca laca: pepe',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		tipo: 'video',
-		url: 'youtube_url.com',
-		imgSlider: 'https://dummyimage.com/100x100/2eb3af/ffffff'
-	},
+		isVideo: false,
+		idYoutube: '',
+		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
+		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
+	}
 ];

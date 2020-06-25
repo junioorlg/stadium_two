@@ -6,6 +6,7 @@
 
     .brand-logo {
         position: relative;
+        width: 110px;
         z-index: 1000;
         font-size: 25px;
         font-weight: bold;
@@ -78,6 +79,13 @@
         .material-icons {
             font-size: 40px;
             color: rgb(0, 0, 0);
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        .brand-logo {
+            width: auto;
         }
     }
 }

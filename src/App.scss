@@ -1,17 +1,50 @@
 * {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0;
 }
 
 body {
-  overflow: hidden;
+  	overflow: hidden;
 }
 
 .hide-opacity {
-  opacity: 0;
+  	opacity: 0;
 }
 
 .page-internal {
-  padding: 70px 20px;
+  	padding: 70px 20px;
+}
+
+.container-internal{
+	overflow: hidden;
+}
+
+.internal {
+	position: relative;
+	width: 200%;
+	left: 0;
+	transition: 1s;
+
+	.internal-main {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.internal-gallery {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.btn-gallery {
+	position: absolute;
+    width: 100px;
+	height: 97px;
+	cursor: pointer;
+	
+	&.go {
+		transform: rotate(-185deg);
+	}
 }

@@ -3,6 +3,8 @@ import Slider from "react-slick"
 import M from 'materialize-css'
 
 // SCSS
+import '../../media/arrow.png'
+// SCSS
 import './gallery.scss'
 
 // Components
@@ -59,7 +61,10 @@ class Gallery extends Component {
     }
 
     render() {
-        const { data } = this.props
+        const { 
+            data,
+            title
+         } = this.props
 
         const { 
             name, 
@@ -76,52 +81,75 @@ class Gallery extends Component {
             infinite: false,
             speed: 500,
             slidesToShow: 4,
-            swipeToSlide: true
+            vertical: true,
+            swipeToSlide: true,
+            draggable: true,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                    vertical: false
+                }
+              }
+            ]
         }
 
         return (
             <div className="gallery-component">
-                <h5>Marketing deportivo</h5>
+                <div className="row">
+                    <div className="col s12">
+                        <h5>{title}</h5>
+                    </div>
+                </div>
 
                 <div className="gallery-body">
                     <div className="row">
-                        <div 
-                            className="col s5 gallery-principal-image modal-trigger"
-                            href="#modal1"
-                            onClick={this.handleOpenModal}>
-                            <div className={isVideo ? 'play-video' : 'play-video hide'}></div>
-                            <img src={imgPreview} className="responsive-img" alt={name} />
-                        </div>
+                        <div className="col s12 m8">
+                            <div 
+                                className="col s5 gallery-principal-image modal-trigger"
+                                href="#modal1"
+                                onClick={this.handleOpenModal}>
+                                <div className={isVideo ? 'play-video' : 'play-video hide'}></div>
+                                <img src={imgPreview} className="responsive-img" alt={name} />
+                            </div>
 
-                        <div className="col s7 gallery-info">
-                            <p className="name">{name}</p>
-                            <p className="anio">Año: {anio}</p>
-                            <p className="description">{description}</p>
+                            <div className="col s7 gallery-info">
+                                <p className="name">{name}</p>
+                                <p className="anio">Año: {anio}</p>
+                                <p className="description">{description}</p>
+                            </div>
+                        </div>
+                        <div className="col s12 m4">
+                            <Slider {...settingsSlider}>
+                                {
+                                    data.map((val, i) => {
+                                        return (
+                                            <div className="col s12" key={i}>
+                                                <div className="col s12 m7">
+                                                    <div
+                                                        className="box-preview" 
+                                                        onClick={this.handleChangeElementGallery}>
+                                                        
+                                                        <div
+                                                            data-id={val.id}
+                                                            className="box-preview-bg" 
+                                                            style={{
+                                                                backgroundImage: `url(${(val.imgSlider) || "https://dummyimage.com/100x100/000/fff"})`
+                                                            }}>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col m5 hide-on-small-only">
+                                                    {val.name}
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </Slider>
                         </div>
                     </div>
                 </div>
-                
-                <Slider {...settingsSlider}>
-                    {
-                        data.map((val, i) => {
-                            return (
-                                <div 
-                                    key={i} 
-                                    className="box-preview" 
-                                    onClick={this.handleChangeElementGallery}>
-                                    
-                                    <div
-                                        data-id={val.id}
-                                        className="box-preview-bg" 
-                                        style={{
-                                            backgroundImage: `url(${(val.imgSlider) || "https://dummyimage.com/100x100/000/fff"})`
-                                        }}>
-                                        </div>
-                                </div>
-                            )
-                        })
-                    }
-                </Slider>
 
                 <div
                     id="modal1"

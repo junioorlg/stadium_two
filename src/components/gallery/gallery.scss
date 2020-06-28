@@ -95,7 +95,65 @@
             &:after {
               transform: rotate(-45deg);
             }
-          }
-          
+        }
+    }
+
+    .slick-slider {
+        .slick-arrow {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background: url(./../../media/arrow.png);
+            background-size: 100% 100%;
+
+            &.slick-prev {
+                top: -30px;
+                left: 29%;
+                transform: rotate(-90deg);
+                &:before {
+                    content: '';
+                }
+            }
+
+            &.slick-next {
+                top: auto;
+                left: 29%;
+                bottom: -22px;
+                transform: rotate(90deg);
+                &:before {
+                    content: '';
+                }
+            }
+        }
+    }    
+
+    @media (min-width: 1024px) {
+        h5 {
+            font-family: 'GalanoGrotesque';
+        }
+        
+        .gallery-body {
+            .gallery-info {
+                .name {
+                    font-size: 40px;
+                    padding-right: 30px;
+                    margin-bottom: 30px;
+                    line-height: 40px;
+                }
+    
+                .anio, .description {
+                    font-family: 'GalanoGrotesque';
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .box-preview {
+            height: 140px;
+            
+            .box-preview-bg {
+                height: 130px;
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@
     text-decoration-color: black;
     font-weight: bold;
     position: absolute;
-    bottom: 4em;
+    bottom: 0em;
 }
 .entretenimiento-paragraph{
     text-align: justify;
@@ -37,4 +37,9 @@
     .entretenimiento-paragraph{
         font-weight: bold;
     }
+  }
+  
+  .btn-gallery {
+    bottom: 0em;
+    left: 70em;
   }

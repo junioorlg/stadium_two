@@ -15,3 +15,41 @@ body {
 .page-internal {
   padding: 70px 20px;
 }
+
+.responsive-img{
+    width: 100%;
+    height: auto;
+}
+
+
+.page-title{
+    font-family: 'GalanoGrotesqueBold';
+    font-size: 3em;
+}
+//Pages Link Subtitle Container
+.page-subtitle-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 35px;
+}
+
+// Pages Links Subtitle Style
+h6.page-subtitle{
+    font-family: 'GalanoGrotesqueBold';
+    text-decoration: underline;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    h6.page-subtitle{
+        font-size: 1.9em;
+    }
+
+    .page-title{
+        font-size: 2em;
+    }
+}

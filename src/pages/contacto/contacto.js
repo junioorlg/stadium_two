@@ -47,7 +47,7 @@ function Contacto ( props ) {
                            </div>
 
                             <div class="input-field">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea custom-ta"></textarea>
                                 <label for="textarea1">Mensaje</label>
                             </div>
 

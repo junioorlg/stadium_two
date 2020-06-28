@@ -10,8 +10,11 @@ import {
 
 /* pages */
 import Home from './pages/home/home';
+import Deportivo from './pages/deportivo/deportivo';
+import Medio from './pages/medios/medios';
+import Adaptacion from './pages/adaptacion/adaptacion';
 import Deportes from './pages/internal/deportes/deportes';
-import Eventos from './pages/internal/eventos/eventos';
+import Eventos from './pages/eventos/eventos';
 import Medios from './pages/internal/medios/medios';
 import Entretenimientos from './pages/entretenimientos/entretenimientos';
 import Contacto from './pages/contacto/contacto';
@@ -29,12 +32,24 @@ class App extends Component {
 							<Home />
 						</Route>
 
-						<Route path="/deportes">
-							<Deportes />
+                        <Route path="/deportivo">
+							<Deportivo />
 						</Route>
 
-						<Route path="/eventos">
+                        <Route path="/medio">
+							<Medio />
+						</Route>
+
+                        <Route path="/adaptacion">
+							<Adaptacion />
+						</Route>
+
+                        <Route path="/eventos">
 							<Eventos />
+						</Route>
+
+						<Route path="/deportes">
+							<Deportes />
 						</Route>
 
 						<Route path="/medios">

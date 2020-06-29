@@ -4,21 +4,33 @@ import Main from './../main/main'
 
 class Home extends Component {
 
-  render() {
-    return (
-        <Main>
-            <div className="container">
-                <p className="home-title">Somos una Agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos solucion es de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.
-                    
-                Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.</p>
+    componentWillMount(){
+        document.body.classList.add("home-background");
+    }
 
-                <div className="center-align">
-                    <h6 className="home-link">CONTACTO</h6>
+    componentWillUnmount(){
+        document.body.classList.remove("home-background");
+    }
+
+    render() {
+        return (
+            <Main>
+                <div className="container">
+                    <div className="row">
+                        <div className="col m10 offset-m1 s12">
+                            <p className="home-about">Somos una Agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.</p>
+                            
+                            <p className="home-about">Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.</p>
+                        </div>
+                    </div>
+
+                    <div className="page-subtitle-container">
+                        <h6 className="page-subtitle">CONTACTO</h6>
+                    </div>
                 </div>
-            </div>
-        </Main>
-    );
-  }
+            </Main>
+        );
+    }
 }
 
 export default Home;

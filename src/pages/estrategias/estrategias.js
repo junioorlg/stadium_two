@@ -3,14 +3,19 @@ import Main from './../main/main'
 import './estrategias.scss'
 
 function Estrategias(props){
+
+    var title = 'Research y estrategia';
+    var subtitle = 'CONTACTO';
+    var paragraph = 'Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra Metodlogía se construye así:';
+
     return(
         <Main>
             <div className="container">
                
                 <div className="row">
                     <div className="col m5">
-                        <h3>Research y estrategia</h3>
-                        <p>Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra Metodlogía se construye así:</p>
+                        <h3 className='page-title space-top'>{title}</h3>
+                        <p className='estrategia-paragraph'>{paragraph}</p>
                     </div>
                     <div className="col m7">
                         <ul className="estrategia-menu-items">
@@ -23,6 +28,10 @@ function Estrategias(props){
                             <li><span className="change-color-helper">Evolucionar</span> Monitoreo y Control</li>
                         </ul>
                     </div>
+                </div>
+
+                <div className="page-subtitle-container">
+                    <h6 className="page-subtitle">{subtitle}</h6>
                 </div>
             </div>
         </Main>

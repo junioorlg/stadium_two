@@ -3,9 +3,38 @@
         font-weight: bold;
         font-size: 1.5em;
         border-bottom: 2px solid rgb(206, 198, 198);
-        margin-bottom: 15px;
+        padding: 7px 5px;
         span.change-color-helper{
             color: rgb(209, 203, 203);
         }
+    }
+}
+
+.estrategia-paragraph{
+    font-family: 'GalanoGrotesque';
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.space-top{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .estrategia-paragraph{
+        font-weight: bold;
+        padding-left: 25px;
+    }
+
+    .estrategia-menu-items{
+        li{
+            font-size: 1.1em;
+            padding: 4px;
+        }
+    }
+
+    .space-top{
+        margin-top: 0px;
     }
 }

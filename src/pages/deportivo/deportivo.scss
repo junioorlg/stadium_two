@@ -1,0 +1,12 @@
+
+.deportivo-paragraph{
+    font-family: 'GalanoGrotesque';
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+    .deportivo-paragraph{
+        font-weight: bold;
+    }
+}

@@ -30,8 +30,12 @@ class App extends Component {
 							<Deportes />
 						</Route>
 
-						<Route path="/eventos">
+                        <Route path="/eventos">
 							<Eventos />
+						</Route>
+
+						<Route path="/deportes">
+							<Deportes />
 						</Route>
 
 						<Route path="/medios">

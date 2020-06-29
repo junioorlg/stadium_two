@@ -1,20 +1,17 @@
-.home-title{
-    font-size: 1.7em;
-    font-weight: bold;
-    text-align: justify;
-    line-height: 55px;
-    padding: 25px 25px 0;
+.home-background{
+    background: url('../../media/home/bg-img.jpg?v=1') no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.home-link{
-    margin-top: 150px;
-    font-size: 1.3em;
-    font-weight: bold;
+.home-about{
+    font-size: 1.7em;
+    text-align: justify;
+    font-family: 'GalanoGrotesqueBold';
 }
 
 @media screen and (max-width: 600px) {
-    .home-title{
+    .home-about{
         font-size: 1.2em;
-        line-height: normal;
     }
 }

@@ -26,28 +26,13 @@ body {
 	left: 0;
 	transition: 1s;
 
-	.internal-main {
+    .internal-main,
+    .internal-gallery {
+        position: relative;
 		width: 50%;
 		display: inline-block;
 		vertical-align: top;
 	}
-	.internal-gallery {
-		width: 50%;
-		display: inline-block;
-		vertical-align: top;
-	}
-}
-
-.btn-gallery {
-	position: absolute;
-    width: 100px;
-	height: 97px;
-	cursor: pointer;
-	
-	&.go {
-		transform: rotate(-185deg);
-	}
-  padding: 70px 20px;
 }
 
 .responsive-img{
@@ -60,6 +45,7 @@ body {
     font-family: 'GalanoGrotesqueBold';
     font-size: 3em;
 }
+
 //Pages Link Subtitle Container
 .page-subtitle-container{
     position: absolute;

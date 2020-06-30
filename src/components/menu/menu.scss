@@ -30,20 +30,22 @@
             }
         }
         .content-menu {
-            width: 50%;
+            width: 95%;
             text-align: center;
             margin: 40vh auto 0;
             text-transform: uppercase;
             transition: all 1.5s;
 
             a {
-                margin-bottom: 25px;
+                height: auto;
                 color: #fff;
-                font-size: 3.2rem;
-                letter-spacing: 8px;
+                font-size: 2rem;
+                cursor: pointer;
+                letter-spacing: 2px;
+                margin-bottom: 15px;
                 transition: all 1.5s;
                 font-family: 'GalanoGrotesqueBold';
-                cursor: pointer;
+                
                 &:hover {
                     background: none;
                 }
@@ -67,7 +69,7 @@
                 margin-top: 20vh;
                 .link-menu {
                     a {
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -82,10 +84,28 @@
         }
     }
 
-    @media (min-width: 1024px) {
-
+    @media (min-width: 768px) {
         .brand-logo {
             width: auto;
+        }
+        .sidenav {
+            .content-menu {
+                width: 50%;
+
+                a {
+                    margin-bottom: 25px;
+                    letter-spacing: 8px;
+                    font-size: 3.2rem;
+                }
+
+                &.active-submenu {
+                    .link-menu {
+                        a {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

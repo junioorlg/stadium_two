@@ -2,10 +2,10 @@ import React from 'react'
 import Main from '../main/main'
 
 import Gallery from './../../components/gallery/gallery'
+import BtnSwtitchGallery from './../../components/btnSwtitchGallery/btnSwtitchGallery'
 
 import './entretenimientos.scss'
 
-import imgVolver from '../../media/volver.png'
 import entretenimientoImg1 from '../../media/entretenimiento/entretenimiento1.png'
 import entretenimientoImg2 from '../../media/entretenimiento/entretenimiento2.png'
 
@@ -68,9 +68,7 @@ function Entretenimientos ( props ) {
                             </div>
                         </div>
 
-                        <div className="btn-gallery go">
-                            <img className="responsive-img" src={imgVolver} onClick={changeToGallery} alt="" />
-                        </div>
+                        <BtnSwtitchGallery direction="go"/>
                     </div>
                     
                     <div className="internal-gallery">

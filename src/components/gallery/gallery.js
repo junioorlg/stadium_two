@@ -9,6 +9,7 @@ import './gallery.scss'
 
 // Components
 import IframeYoutube from './IframeYoutube'
+import BtnSwtitchGallery from './../btnSwtitchGallery/btnSwtitchGallery'
 
 
 class Gallery extends Component {
@@ -88,7 +89,8 @@ class Gallery extends Component {
               {
                 breakpoint: 1024,
                 settings: {
-                    vertical: false
+                    vertical: false,
+                    arrows: false
                 }
               }
             ]
@@ -109,7 +111,7 @@ class Gallery extends Component {
                                 className="col s5 gallery-principal-image modal-trigger"
                                 href="#modal1"
                                 onClick={this.handleOpenModal}>
-                                <div className={isVideo ? 'play-video' : 'play-video hide'}></div>
+                                {/*<div className={isVideo ? 'play-video' : 'play-video hide'}></div>*/}
                                 <img src={imgPreview} className="responsive-img" alt={name} />
                             </div>
 
@@ -139,7 +141,7 @@ class Gallery extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="col m5 hide-on-small-only">
+                                                <div className="col m5 hide-on-small-only title-img-slider">
                                                     {val.name}
                                                 </div>
                                             </div>
@@ -150,6 +152,8 @@ class Gallery extends Component {
                         </div>
                     </div>
                 </div>
+
+                <BtnSwtitchGallery direction="back"/>
 
                 <div
                     id="modal1"

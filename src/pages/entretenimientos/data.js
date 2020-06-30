@@ -6,13 +6,13 @@ export const data =
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: 'r5dzmx63ORI',
-		imgSlider: './media/gallery/abzurdah_produccion.png',
-		imgPreview: './media/gallery/abzurdah_produccion.png'
+		idYoutube: 'OdAQrzhXzgY',
+		imgSlider: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg',
+		imgPreview: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg'
 	},
 	{
 		id: 2,
-		name: 'laca laca: pepe',
+		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
@@ -21,18 +21,18 @@ export const data =
 		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
-		id: 3,
+		id: 1,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: '_vP7fDFyPLg',
-		imgSlider: './media/gallery/abzurdah_produccion.png',
-		imgPreview: './media/gallery/abzurdah_produccion.png'
+		idYoutube: 'OdAQrzhXzgY',
+		imgSlider: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg',
+		imgPreview: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg'
 	},
 	{
-		id: 4,
-		name: 'laca laca: pepe',
+		id: 2,
+		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
@@ -41,18 +41,18 @@ export const data =
 		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
-		id: 5,
+		id: 1,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: 'r5dzmx63ORI',
-		imgSlider: './media/gallery/abzurdah_produccion.png',
-		imgPreview: './media/gallery/abzurdah_produccion.png'
+		idYoutube: 'OdAQrzhXzgY',
+		imgSlider: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg',
+		imgPreview: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg'
 	},
 	{
-		id: 6,
-		name: 'laca laca: pepe',
+		id: 2,
+		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
@@ -61,23 +61,23 @@ export const data =
 		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
 	},
 	{
-		id: 7,
+		id: 1,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: '_vP7fDFyPLg',
-		imgSlider: './media/gallery/abzurdah_produccion.png',
-		imgPreview: './media/gallery/abzurdah_produccion.png'
+		idYoutube: 'OdAQrzhXzgY',
+		imgSlider: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg',
+		imgPreview: './media/gallery/entretenimiento/caratula-Ezzequiel.jpg'
 	},
 	{
-		id: 8,
-		name: 'laca laca: pepe',
+		id: 2,
+		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
 		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
-	}
+	},
 ];

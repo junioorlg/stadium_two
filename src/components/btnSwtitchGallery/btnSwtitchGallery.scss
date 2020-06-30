@@ -1,0 +1,10 @@
+.btn-gallery {
+	position: absolute;
+    width: 60px;
+	height: 60px;
+	cursor: pointer;
+	
+	&.go {
+		transform: rotate(-180deg);
+	}
+}

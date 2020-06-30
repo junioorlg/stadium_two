@@ -75,7 +75,7 @@ class Menu extends Component {
                         </div>
 
                         <div className="content-menu">
-                            <li id="active-submenu" className="link-menu"><a href="collapsible.html">Servicios</a></li>
+                            <li id="active-submenu" className="link-menu"><a href="#">Servicios</a></li>
                             
                             <ul className="content-submenu">
                                 <li className="link-submenu"><Link to="/deportes">Deporte</Link></li>

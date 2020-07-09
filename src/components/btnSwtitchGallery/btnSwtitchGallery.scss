@@ -1,10 +1,18 @@
 .btn-gallery {
 	position: absolute;
-    width: 60px;
-	height: 60px;
-	cursor: pointer;
+
+	button {
+		background-color: #DDDDDD;
+		border-radius: 10px;
+		color: #000;
+
+		&:hover,
+		&:focus {
+			background-color: #CCCCCC;
+		}
+	}
 	
 	&.go {
-		transform: rotate(-180deg);
+		//transform: rotate(-180deg);
 	}
 }

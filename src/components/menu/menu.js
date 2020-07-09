@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import M from 'materialize-css';
 import './menu.scss';
 
-import {
-    BrowserRouter as Router,
-    Link
-} from "react-router-dom";
+import logo  from './../../media/logo-stadium.png'
+import logoW from './../../media/logo-stadium-w.png'
+
+import { Link } from "react-router-dom";
 
 class Menu extends Component {
+
+    constructor() {
+        super();
+
+        this.state = {logoStadium: logo}
+    }
 
     closeMenu () {
         console.log('debe cerrar menu');
@@ -15,13 +21,13 @@ class Menu extends Component {
     }
 
     render() {
-        const logo = require('./../../media/logo-stadium.png');
+        const that = this;
+        const {logoStadium} = this.state
 
         document.addEventListener('DOMContentLoaded', function() {
             var elems       = document.querySelectorAll('.sidenav');
             var solialLink  = document.querySelectorAll('.social-link');
             var iconBurguer = document.querySelector('.sidenav-trigger');
-            var logo        = document.querySelector('.brand-logo');
 
             /* menu */
             var activeMenu     = document.querySelector( '#active-submenu' );
@@ -38,7 +44,6 @@ class Menu extends Component {
                 inDuration: 800,
                 outDuration: 800,
                 onOpenStart: () => {
-                    logo.classList.add( 'white-text' );
                     iconBurguer.classList.add( 'hide-opacity' );
 
                     [].forEach.call( solialLink, function( elm ) {
@@ -46,9 +51,11 @@ class Menu extends Component {
                     });
                 },
                 onOpenEnd: () => {
+                    //that.setState({ logoStadium: logoW })
+                    
                 },
                 onCloseStart : () => {
-                    logo.classList.remove( 'white-text' );
+                    //that.setState({ logoStadium: logo })
                 },
                 onCloseEnd : () => {
                     iconBurguer.classList.remove( 'hide-opacity' );
@@ -62,10 +69,9 @@ class Menu extends Component {
 
         return (
             <div className="menu-component">
-                <Router>
                     <Link to="/">
                         <div className="brand-logo">
-                            <img src={logo} className="responsive-img" alt="stadium" />
+                            <img src={logoStadium} className="responsive-img" alt="stadium" />
                         </div>
                     </Link>
 
@@ -82,18 +88,17 @@ class Menu extends Component {
                                 <li className="link-submenu"><Link to="/eventos">Eventos</Link></li>
                                 <li className="link-submenu"><Link to="/producciones">Producciones</Link></li>
                                 <li className="link-submenu"><Link to="/gestion_medios">Gestión de medios</Link></li>
-                                <li className="link-submenu"><Link to="/entretenimiento">Entretenimiento</Link></li>
+                                <li className="link-submenu"><Link to="/entretenimientos">Entretenimiento</Link></li>
                             </ul>
 
-                            <li className="link-menu"><Link to="/servicios" onClick={() => this.closeMenu()}>Equipo</Link></li>
-                            <li className="link-menu"><a href="collapsible.html">Contacto</a></li>
+                            <li className="link-menu"><Link to="/equipo">Equipo</Link></li>
+                            <li className="link-menu"><Link to="/contacto">Contacto</Link></li>
                         </div>
                     </ul>
 
                     <a href="collapsible.html" data-target="slide-out" className="sidenav-trigger show-on-large right">
                         <i className="material-icons black-text">menu</i>
                     </a>
-                </Router>
             </div>
         );
     }

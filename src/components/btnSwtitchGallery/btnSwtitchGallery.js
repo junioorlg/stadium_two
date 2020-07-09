@@ -30,10 +30,25 @@ class BtnSwtitchGallery extends Component {
         return (
             <div className="btn-switch-gallery-component">
                 <div className={classDirection}>
-                    <img className="responsive-img" src={imgVolver} onClick={this.toogleGallery} alt="swith gallery" />
+                    <Buttone direction={direction} that={this} />
+                    {/*<img className="responsive-img" src={imgVolver} onClick={this.toogleGallery} alt="swith gallery" />*/}
                 </div>
             </div>
         )
+    }
+}
+
+function Buttone (props) {
+    
+    const {
+        direction,
+        that
+    } = props;
+
+    if (direction === 'go') {
+        return <button className="btn" onClick={that.toogleGallery}>Ver Proyectos <i class="material-icons right">keyboard_arrow_right</i></button>
+    } else {
+        return <button className="btn" onClick={that.toogleGallery}><i class="material-icons left">keyboard_arrow_left</i> Volver</button>
     }
 }
 

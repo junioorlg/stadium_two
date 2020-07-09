@@ -6,7 +6,7 @@ function Contacto ( props ) {
 
     return (
         <Main>
-           <div className="container">
+           <div className="container contacto">
 
                <div className="row">
                    <div className="col m12">
@@ -46,8 +46,8 @@ function Contacto ( props ) {
                                 <label>Mail *</label>
                            </div>
 
-                            <div class="input-field">
-                                <textarea id="textarea1" class="materialize-textarea custom-ta"></textarea>
+                            <div className="input-field form-group">
+                                <textarea id="textarea1" className="materialize-textarea"></textarea>
                                 <label for="textarea1">Mensaje</label>
                             </div>
 

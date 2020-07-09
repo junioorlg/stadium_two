@@ -11,6 +11,7 @@ class Social extends Component {
                     <li><a className="social-link" href="google.com">twiter</a></li>
                     <li><a className="social-link" href="google.com">linkedin</a></li>
                     <li><a className="social-link" href="google.com">hola@stadium.com</a></li>
+                    <li><a className="social-link" href="google.com"><u>SP</u> / EN</a></li>
                 </ul>
             </div>
         );

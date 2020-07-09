@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
-import './App.scss';
+import React, { Component } from 'react'
+import './App.scss'
 
 /* router */
 import {
 	BrowserRouter as Router,
 	Switch,
 	Route
-} from "react-router-dom";
+} from "react-router-dom"
 
 /* pages */
-import Home from './pages/home/home';
-import Entretenimientos from './pages/entretenimientos/entretenimientos';
-import Contacto from './pages/contacto/contacto';
-import Estrategias from './pages/estrategias/estrategias';
+import Home from './pages/home/home'
+import Contacto from './pages/contacto/contacto'
+import Equipo from './pages/equipo/equipo'
+import Page404 from './pages/page404/page404'
+
+/* internals */
+import Entretenimientos from './pages/entretenimientos/entretenimientos'
+import Eventos from './pages/eventos/eventos'
+import Deportivo from './pages/deportivo/deportivo'
 
 class App extends Component {
 	render() {
@@ -24,35 +29,29 @@ class App extends Component {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						
-						{/*
-						<Route path="/deportes">
-							<Deportes />
-						</Route>
 
-                        <Route path="/eventos">
-							<Eventos />
-						</Route>
-
-						<Route path="/deportes">
-							<Deportes />
-						</Route>
-
-						<Route path="/medios">
-							<Medios />
-						</Route>
-						*/}
-
-                        <Route path="/entretenimientos">
-							<Entretenimientos />
-						</Route>
-
-                        <Route path="/contacto">
+						<Route path="/contacto">
 							<Contacto />
 						</Route>
 
-                        <Route path="/estrategias">
-							<Estrategias />
+						<Route path="/equipo">
+							<Equipo />
+						</Route>
+
+                        <Route exact path="/entretenimientos">
+							<Entretenimientos />
+						</Route>
+
+                        <Route exact path="/eventos">
+							<Eventos />
+						</Route>
+
+                        <Route exact path="/deportes">
+							<Deportivo />
+						</Route>
+
+						<Route>
+							<Page404 />
 						</Route>
 					</Switch>
 

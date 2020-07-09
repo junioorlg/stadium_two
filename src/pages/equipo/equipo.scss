@@ -1,5 +1,5 @@
-.home-background{
-    background: url('../../media/home/bg-img.jpg?v=1') no-repeat; 
+.equipo-background{
+    background: url('../../media/equipo/bg-img.jpg?v=1') no-repeat; 
     background-attachment: fixed;
     background-size: cover; /* Resize the background image to cover the entire container */
 }
@@ -8,17 +8,17 @@
     .valign-wrapper {
         height: 60vh;
 
-        .home-about{
+        .equipo-about{
             font-size: 1.7em;
             text-align: justify;
-            font-family: 'GalanoGrotesqueBold';
+            font-family: 'GalanoGrotesqueSemiBold';
             letter-spacing: 1.5px;
         }
     }
 
     @media screen and (max-width: 600px) {
         .valign-wrapper {
-            .home-about{
+            .equipo-about{
                 font-size: 1.2em;
             }
         }

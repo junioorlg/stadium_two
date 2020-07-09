@@ -17,12 +17,6 @@ function Entretenimientos ( props ) {
     var subtitle = 'CONTACTO'
     var paragraph = 'Generamos contenido para todas las plataformas. Nos especializamos en la ejecución de acciones en social media y contenidos con inﬂuencers. Nuestro equipo de marketing suma un nuevo espacio dándole oportunidades a nuevos talentos y a talentos ya conocidos, para que aprovechen las plataformas audiovisuales que el entorno digital ofrece para interactuar con el público consumidor. Desarrollamos la comunicación y administración de contenidos digitales generando una nueva fuente de exposición para que los talentos moneticen su potencial de impacto.'
 
-    const changeToGallery = () => {
-        const internal = document.querySelector('.internal')
-        
-        internal.style.left = "-100%";
-    }
-
     return (
         <Main>
             <div className="container container-internal">

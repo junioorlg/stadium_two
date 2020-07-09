@@ -2,7 +2,7 @@ export const data =
 [
 	{
 		id: 1,
-		name: 'Radio: Oral Deportiva',
+		name: 'Ezzequiel - Reto de los 90 segundos',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,

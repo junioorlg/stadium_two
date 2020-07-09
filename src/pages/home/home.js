@@ -15,12 +15,10 @@ class Home extends Component {
     render() {
         return (
             <Main>
-                <div className="container">
+                <div className="container equipo">
                     <div className="row">
-                        <div className="col m10 offset-m1 s12">
-                            <p className="home-about">Somos una Agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.</p>
-                            
-                            <p className="home-about">Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.</p>
+                        <div className="col m10 offset-m1 s12 valign-wrapper">
+                            <p className="home-about">Somos una Agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.<br /><br />Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.</p>
                         </div>
                     </div>
 

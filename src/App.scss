@@ -49,23 +49,25 @@ body {
 //Pages Link Subtitle Container
 .page-subtitle-container{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: auto;
     padding: 35px;
-}
-
-// Pages Links Subtitle Style
-h6.page-subtitle{
-    font-family: 'GalanoGrotesqueBold';
-    text-decoration: underline;
-    font-size: 1.3em;
+    letter-spacing: 1.5px;
     text-align: center;
+
+    // Pages Links Subtitle Style
+    .page-subtitle{
+        font-family: 'GalanoGrotesqueBold';
+        text-decoration: underline;
+        font-size: 1.3em;
+        color: #000;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    h6.page-subtitle{
+    .page-subtitle{
         font-size: 1.9em;
     }
 

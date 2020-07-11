@@ -2,9 +2,9 @@
 .container {
     margin-top: 100px;
     
-    &.contacto {
+    /*&.contacto {
         padding-top: 140px;
-    }
+    }*/
 }
 .contacto-title{
     font-family: 'GalanoGrotesqueExtraBold';
@@ -44,9 +44,14 @@
     min-height: 6rem !important;
 }
 
+.lang-selector{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .contacto-title{
         font-size: 3em;
+        transform: translateX(0);
     }
 
     .contacto-btn-submitter{

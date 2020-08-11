@@ -9,6 +9,8 @@ import './gallery.scss'
 
 // Components
 import IframeYoutube from './IframeYoutube'
+import BtnSwtitchGallery from './../btnSwtitchGallery/btnSwtitchGallery'
+
 
 class Gallery extends Component {
 
@@ -48,7 +50,6 @@ class Gallery extends Component {
         const id = parseInt(e.target.getAttribute('data-id'))
         const data = this.props.data
         const slider = data.find(x => x.id === id )
-        const sliders = document.getElementsByClassName('box-preview-bg')
 
         this.setState({
             name: slider.name,
@@ -58,11 +59,6 @@ class Gallery extends Component {
             idYoutube: slider.idYoutube,
             isVideo: slider.isVideo,
         })
-
-        for (let i = 0; i < sliders.length; i++)
-            sliders[i].classList.add('inactive')
-
-        e.target.classList.remove('inactive')
     }
 
     render() {
@@ -81,21 +77,18 @@ class Gallery extends Component {
             isCloseModal
         } = this.state
 
-        const cantSlider = this.props.data.length > 3 ? 4 : 2;
-
         const settingsSlider = {
             dots: false,
             infinite: false,
             speed: 500,
-            slidesToShow: cantSlider,
-            vertical: false,
+            slidesToShow: 4,
+            vertical: true,
             swipeToSlide: true,
             draggable: true,
             responsive: [
               {
-                breakpoint: 768,
+                breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1,
                     vertical: false,
                     arrows: false
                 }
@@ -105,28 +98,51 @@ class Gallery extends Component {
 
         return (
             <div className="gallery-component">
+                <div className="row">
+                    <div className="col s12">
+                        <h5>{title}</h5>
+                    </div>
+                </div>
+
                 <div className="gallery-body">
                     <div className="row">
-                        <div className="col s12">
+                        <div className="col s12 m8">
+                            <div 
+                                className="col s5 gallery-principal-image modal-trigger"
+                                href="#modal1"
+                                onClick={this.handleOpenModal}>
+                                {/*<div className={isVideo ? 'play-video' : 'play-video hide'}></div>*/}
+                                <img src={imgPreview} className="responsive-img" alt={name} />
+                            </div>
+
+                            <div className="col s7 gallery-info">
+                                <p className="name">{name}</p>
+                                <p className="anio">Año: {anio}</p>
+                                <p className="description">{description}</p>
+                            </div>
+                        </div>
+                        <div className="col s12 m4">
                             <Slider {...settingsSlider}>
                                 {
                                     data.map((val, i) => {
                                         return (
                                             <div className="col s12" key={i}>
-                                                <div className="col s12">
+                                                <div className="col s12 m7">
                                                     <div
-                                                        className="box-preview  modal-trigger" 
-                                                        href="#modal1"
+                                                        className="box-preview" 
                                                         onClick={this.handleChangeElementGallery}>
                                                         
                                                         <div
                                                             data-id={val.id}
-                                                            className="box-preview-bg inactive" 
+                                                            className="box-preview-bg" 
                                                             style={{
                                                                 backgroundImage: `url(${(val.imgSlider) || "https://dummyimage.com/100x100/000/fff"})`
                                                             }}>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div className="col m5 hide-on-small-only title-img-slider">
+                                                    {val.name}
                                                 </div>
                                             </div>
                                         )
@@ -136,6 +152,8 @@ class Gallery extends Component {
                         </div>
                     </div>
                 </div>
+
+                <BtnSwtitchGallery direction="back"/>
 
                 <div
                     id="modal1"

@@ -18,7 +18,11 @@ class Internal extends Component {
             <div className="internal-component">
                 <div className="row">
                     <div className="col s12">
-                        <h1>{title}</h1>
+                        <h1>                        
+                            {title.split('\n').map((item, key) => {
+                                return <span key={key}>{item}<br/></span>
+                            })}
+                        </h1>
                     </div>
                     <div className="col s12 m11">
                         <p>{paragraph}</p>

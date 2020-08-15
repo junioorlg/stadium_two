@@ -17,8 +17,8 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
 		idYoutube: '',
-		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
-		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
+		imgSlider: './media/gallery/entretenimiento/abzurdah_produccion.png',
+		imgPreview: './media/gallery/entretenimiento/abzurdah_produccion.png'
 	},
 	{
 		id: 1,
@@ -37,8 +37,8 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
 		idYoutube: '',
-		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
-		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
+		imgSlider: './media/gallery/entretenimiento/abzurdah_produccion.png',
+		imgPreview: './media/gallery/entretenimiento/abzurdah_produccion.png'
 	},
 	{
 		id: 1,
@@ -57,8 +57,8 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
 		idYoutube: '',
-		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
-		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
+		imgSlider: './media/gallery/entretenimiento/abzurdah_produccion.png',
+		imgPreview: './media/gallery/entretenimiento/abzurdah_produccion.png'
 	},
 	{
 		id: 1,
@@ -77,7 +77,7 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: false,
 		idYoutube: '',
-		imgSlider: './media/gallery/oral_deportiva_producción.jpg',
-		imgPreview: './media/gallery/oral_deportiva_producción.jpg'
+		imgSlider: './media/gallery/entretenimiento/abzurdah_produccion.png',
+		imgPreview: './media/gallery/entretenimiento/abzurdah_produccion.png'
 	},
 ];

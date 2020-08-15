@@ -1,41 +1,50 @@
 import React from 'react'
-import Main from './../main/main'
+import Main from '../main/main'
+
+import Gallery from './../../components/gallery/gallery'
+import Internal from './../../components/internal/internal'
+import BtnContacto from './../../components/btnContacto/btnContacto'
+
 import './estrategias.scss'
 
-function Estrategias(props){
+function Estrategias ( props ) {
 
-    var title = 'Research y estrategia';
-    var subtitle = 'CONTACTO';
-    var paragraph = 'Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra Metodlogía se construye así:';
+    var title = 'Research \n y estrategia'
+    var paragraph = 'Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra metodología se contruye así:'
 
-    return(
+    return (
         <Main>
-            <div className="container">
-               
+            <div className="container container-estrategias">
+
                 <div className="row">
-                    <div className="col m5">
-                        <h3 className='page-title space-top'>{title}</h3>
-                        <p className='estrategia-paragraph'>{paragraph}</p>
-                    </div>
-                    <div className="col m7">
-                        <ul className="estrategia-menu-items">
-                            <li><span className="change-color-helper">Escuchar</span> Encuestas Digitales</li>
-                            <li><span className="change-color-helper">Desarrolla</span> Estrategia y Planificación</li>
-                            <li><span className="change-color-helper">Comunicar</span> Producción de Contenidos Digitales</li>
-                            <li><span className="change-color-helper">Amplificar</span> Pauta Oficial</li>
-                            <li><span className="change-color-helper">Informar</span> Pauta Informativa</li>
-                            <li><span className="change-color-helper">Fidelizar</span> Territorio</li>
-                            <li><span className="change-color-helper">Evolucionar</span> Monitoreo y Control</li>
+                    <div className="col s12 m6">
+                        <h1>                        
+                            {title.split('\n').map((item, key) => {
+                                return <span key={key}>{item}<br/></span>
+                            })}
+                        </h1>
+                        <p>{paragraph}</p>
+                        <ul class="menu-estrategias">
+                            <li>1.ESCUCHAR / Encuestas Digitales</li>
+                            <li>2.DESARROLLAR / Estrategia y Planificación</li>
+                            <li>3.COMUNICAR / Producción de Contenidos</li>
+                            <li>4.AMPLIFICAR / Pauta Oficial</li>
+                            <li>5.INFORMAR / Pauta Informativa</li>
+                            <li>6.FIDELIZAR / Territorio</li>
+                            <li>7.EVOLUCIONAR / Monitoreo y Control</li>
                         </ul>
                     </div>
+                    <div className="col s12 m6">
+                        <img src="./media/gallery/estrategias/bc.png" class="responsive-img" />
+                    </div>
                 </div>
-
-                <div className="page-subtitle-container">
-                    <h6 className="page-subtitle">{subtitle}</h6>
+                    
+                <div className="page-contacto">
+                    <BtnContacto />
                 </div>
             </div>
         </Main>
-    )
+    );
 }
 
-export default Estrategias
+export default Estrategias;

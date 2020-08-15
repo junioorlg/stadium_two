@@ -1,47 +1,43 @@
 import React from 'react'
-import Main from './../main/main'
+import Main from '../main/main'
+
+import Gallery from './../../components/gallery/gallery'
+import Internal from './../../components/internal/internal'
+import BtnContacto from './../../components/btnContacto/btnContacto'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
+import { useTranslation } from 'react-i18next'
+
 import './medios.scss'
-import mediosImg1 from '../../media/medios/medios.PNG'
 
-function Deportivo ( props ) {
+import {data} from './data';
 
-    var title = 'Gestión de medios';
-    var subtitle = 'CONTACTO';
-    var paragraph = 'Somos una agencia integral de comunicación especializada en la compra de medios, producción de ideas, social media, diseño y edición, optimización e influencers.';
-    
+function Medios ( props ) {
+
+    const { t } = useTranslation();
+
+    var title = 'Gestión \n de Medios'
+    var paragraph = 'Nos especializamos en la compra de medios y la producción de soluciones e ideas integrales aplicables en social media. Desarrollamos el diseño, la edición y la estrategia de comunicación de tus proyectos. Optimizamos e implementamos las campañas de marketing con influencers para generar mayor impacto mediático.'
+
     return (
         <Main>
-            <div className="container">
-
-                <div className="row">
-
-                    <div className="col m6 offset-m2 hide-on-med-and-up">
-                        <img className='responsive-img' src={ mediosImg1 } atl="medios-img"/>   
-                    </div>
-
-                    <div className="col m4 s12">
-                        <h3 className='page-title'>{title}</h3>
-                        <p className='medios-paragraph'>{paragraph}</p>
-                    </div>
-
-                    <div className="col m6 offset-m2 hide-on-small-only">
-                        <img className='responsive-img' src={ mediosImg1 } atl="medios-img"/>   
-                    </div>
+            <div className="container container-medios">
+                <div className="page-text">
+                    <Internal title={title} paragraph={paragraph} />
                 </div>
-                
-                <div className="row hide-on-small-only">
-                    <div className="col m3">
-                        <h6 className='page-subtitle'>{subtitle}</h6>
-                    </div>
+                    
+                <div className="page-gallery">
+                    <Gallery data={data} title={title} />
                 </div>
-                
-                <div className="page-subtitle-container hide-on-med-and-up">
-                    <h6 className="page-subtitle">{subtitle}</h6>
+                    
+                <div className="page-contacto">
+                    <BtnContacto />
                 </div>
-                
+
+                <BtnLanguage />
+
             </div>
         </Main>
     );
 }
 
-export default Deportivo;
+export default Medios;

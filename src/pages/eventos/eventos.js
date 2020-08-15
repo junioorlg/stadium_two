@@ -1,38 +1,36 @@
 import React from 'react'
-import Main from './../main/main'
+import Main from '../main/main'
+
+import Gallery from './../../components/gallery/gallery'
+import Internal from './../../components/internal/internal'
+import BtnContacto from './../../components/btnContacto/btnContacto'
+
 import './eventos.scss'
 
-function Eventos(props){
+import {data} from './data';
 
-    var title = 'Producción y Eventos';
-    var subtitle = 'CONTACTO';
+function Eventos ( props ) {
 
-    return(
+    var title = 'Producción \n y Eventos'
+    var paragraph = 'Somos un productora especializada en generar contenido audiovisual en todos sus aspectos. Películas, programas de TV, documentales, y programas de radio. Desarrollamos eventos deportivos , comerciales e internacionales. Nos encargamos de la producción e implementación audiovisual campañas de comunicación, gestion de prensa, RRSS, la cobertura en vivo y streaming.'
+
+    return (
         <Main>
-            <div className="container">
-               
-                <div className="row">
-                    <div className="col m8 offset-m4">
-                        <p className='eventos-paragraph first'>Somos una productora especializada en generar contenido audiovisual en todos sus aspectos. Desde <span className='highlight'>películas, programas de TV y documentales</span> hasta programas de <span className='highlight'>radio</span>.</p>
-                    </div>
+            <div className="container container-eventos">
+                <div className="page-text">
+                    <Internal title={title} paragraph={paragraph} />
                 </div>
-
-                <div className="row">
-                    <div className="col l4 m6">
-                        <p className='page-title'>{title}</p>
-                    </div>
-
-                    <div className="col l5 m6">
-                        <p className='eventos-paragraph second'>Ofrecemos todos los servicios para el desarrollo de eventos, ya sean deportivos, comerciales y /o institucionales: producción e implementación audiovisual, campaña de comunicación, gestión de prensa, RRPP, cobertura en vivo y streaming.</p>
-                    </div>
+                    
+                <div className="page-gallery">
+                    <Gallery data={data} title={title} />
                 </div>
-
-                <div className="page-subtitle-container">
-                    <h6 className="page-subtitle">{subtitle}</h6>
+                    
+                <div className="page-contacto">
+                    <BtnContacto />
                 </div>
             </div>
         </Main>
-    )
+    );
 }
 
-export default Eventos
+export default Eventos;

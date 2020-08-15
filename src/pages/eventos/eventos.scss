@@ -1,31 +1,3 @@
-.eventos-paragraph{
-    font-family: 'GalanoGrotesque';
-    &.first{
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(187, 187, 187);
-        margin: 60px 0px 40px 0px;
+.container-eventos {
 
-        span.highlight{
-            color: #000;
-        }
-    } 
-    &.second{
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    .eventos-paragraph{
-        &.first{
-            font-size: 1.2em;
-            margin-top: 0px;
-            margin-bottom: 60px;
-        }
-        
-        &.second{ 
-            font-size: 1.2em;
-        }
-    }
 }

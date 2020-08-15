@@ -44,6 +44,9 @@ class Menu extends Component {
                 inDuration: 800,
                 outDuration: 800,
                 onOpenStart: () => {
+
+                    console.log(solialLink)
+
                     iconBurguer.classList.add( 'hide-opacity' );
 
                     [].forEach.call( solialLink, function( elm ) {
@@ -86,8 +89,8 @@ class Menu extends Component {
                             <ul className="content-submenu">
                                 <li className="link-submenu"><Link to="/deportes">Deporte</Link></li>
                                 <li className="link-submenu"><Link to="/eventos">Eventos</Link></li>
-                                <li className="link-submenu"><Link to="/producciones">Producciones</Link></li>
-                                <li className="link-submenu"><Link to="/gestion_medios">Gestión de medios</Link></li>
+                                <li className="link-submenu"><Link to="/estrategias">Estrategias</Link></li>
+                                <li className="link-submenu"><Link to="/medios">Gestión de medios</Link></li>
                                 <li className="link-submenu"><Link to="/entretenimientos">Entretenimiento</Link></li>
                             </ul>
 

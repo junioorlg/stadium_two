@@ -12,12 +12,14 @@ import {
 import Home from './pages/home/home'
 import Contacto from './pages/contacto/contacto'
 import Equipo from './pages/equipo/equipo'
+import Estrategias from './pages/estrategias/estrategias'
 import Page404 from './pages/page404/page404'
 
 /* internals */
 import Entretenimientos from './pages/entretenimientos/entretenimientos'
 import Eventos from './pages/eventos/eventos'
 import Deportivo from './pages/deportivo/deportivo'
+import Medios from './pages/medios/medios'
 
 class App extends Component {
 	render() {
@@ -48,6 +50,14 @@ class App extends Component {
 
                         <Route exact path="/deportes">
 							<Deportivo />
+						</Route>
+
+                        <Route exact path="/medios">
+							<Medios />
+						</Route>
+
+                        <Route exact path="/estrategias">
+							<Estrategias />
 						</Route>
 
 						<Route>

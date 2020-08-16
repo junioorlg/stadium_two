@@ -5,11 +5,20 @@
     /*&.contacto {
         padding-top: 140px;
     }*/
+
+    .input-field{
+        margin-bottom: 2rem;
+        
+        label{
+            color: #000;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    }
 }
 .contacto-title{
     font-family: 'GalanoGrotesqueExtraBold';
     font-size: 7.5em;
-    transform: translateX(-150px);
 }
 
 .contacto-btn-submitter{
@@ -18,16 +27,6 @@
     .contacto-link-enviar{
         font-weight: bold;
         padding: 0 3px;
-    }
-}
-
-.input-field{
-    margin-bottom: 3rem;
-    
-    label{
-        color: #000;
-        font-size: 0.9em;
-        font-weight: bold;
     }
 }
 
@@ -51,7 +50,6 @@
 @media screen and (max-width: 600px) {
     .contacto-title{
         font-size: 3em;
-        transform: translateX(0);
     }
 
     .contacto-btn-submitter{

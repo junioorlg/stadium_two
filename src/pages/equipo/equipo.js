@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Main from '../main/main'
-
 import './equipo.scss';
+import BtnContacto from './../../components/btnContacto/btnContacto'
+
+//Languages
+import { withTranslation } from 'react-i18next'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
 
 class Equipo extends Component {
 
@@ -15,22 +19,25 @@ class Equipo extends Component {
     }
 
     render() {
+    
         return (
             <Main>
                 <div className="container equipo">
                     <div className="row">
                         <div className="col m10 offset-m1 s12 valign-wrapper">
-                            <p className="equipo-about">Somos una Agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.<br /><br />Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.</p>
+                            <p className="equipo-about">{ this.props.t('EQUIPO_TEXT_1') }</p>
                         </div>
                     </div>
 
-                    <div className="page-subtitle-container">
-                        <Link  to="/contacto" className="page-subtitle">CONTACTO</Link>
+                    <div className="page-contacto">
+                        <BtnContacto />
                     </div>
+
+                    <BtnLanguage />
                 </div>
             </Main>
         );
     }
 }
 
-export default Equipo;
+export default withTranslation()(Equipo);;

@@ -4,6 +4,7 @@ import Main from '../main/main'
 import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
 
 import './deportivo.scss'
 
@@ -11,8 +12,8 @@ import {data} from './data';
 
 function Deportivo ( props ) {
 
-    var title = 'Marketing \n Deportivo'
-    var paragraph = 'Desarrollo e implementación de estrategias integrales en la industria del deporte. Ofrecemos servicios de consultoría general para marcas, jugadores, instituciones y sponsors. Desde estrategia de comunicación 360, producción de eventos y activaciones de marcas comerciales hasta el manejo de carreras deportivas.'
+    var title = 'DEPORTE_TITLE_1'
+    var paragraph = 'DEPORTE_TEXT_1'
 
     return (
         <Main>
@@ -28,6 +29,8 @@ function Deportivo ( props ) {
                 <div className="page-contacto">
                     <BtnContacto />
                 </div>
+
+                <BtnLanguage />
             </div>
         </Main>
     );

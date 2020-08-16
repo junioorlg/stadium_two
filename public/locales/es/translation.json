@@ -3,5 +3,35 @@
     "Nombre": "Nombre",
     "Mail": "Mail",
     "Mensaje": "Mensaje",
-    "ENVIAR": "ENVIAR"
+    "ENVIAR": "ENVIAR",
+    "CONTACTO_MESSAGE_SENT": "Mensaje enviado!",
+
+    "EQUIPO_TEXT_1": "Somos una agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.",
+
+    "DEPORTE_TITLE_1": "Marketing \n Deportivo",
+    "DEPORTE_TEXT_1": "Desarrollo e implementación de estrategias integrales en la industria del deporte. Ofrecemos servicios de consultoría general para marcas, jugadores, instituciones y sponsors. Desde estrategia de comunicación 360, producción de eventos y activaciones de marcas comerciales hasta el manejo de carreras deportivas.",
+
+    "EVENTOS_TITLE_1": "Producción \n y Eventos",
+    "EVENTOS_TEXT_1": "Somos un productora especializada en generar contenido audiovisual en todos sus aspectos. Películas, programas de TV, documentales, y programas de radio. Desarrollamos eventos deportivos , comerciales e internacionales. Nos encargamos de la producción e implementación audiovisual campañas de comunicación, gestion de prensa, RRSS, la cobertura en vivo y streaming.",
+
+    "ESTRATEGIA_TITLE_1": "Research \n y Estrategia",
+    "ESTRATEGIA_TEXT_1": "Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra metodología se contruye así:",
+    "ESTRATEGIA_ITEM_1": "1.ESCUCHAR / Encuestas Digitales",
+    "ESTRATEGIA_ITEM_2": "2.DESARROLLAR / Estrategia y Planificación",
+    "ESTRATEGIA_ITEM_3": "3.COMUNICAR / Producción de Contenidos",
+    "ESTRATEGIA_ITEM_4": "4.AMPLIFICAR / Pauta Oficial",
+    "ESTRATEGIA_ITEM_5": "5.INFORMAR / Pauta Informativa",
+    "ESTRATEGIA_ITEM_6": "6.FIDELIZAR / Territorio",
+    "ESTRATEGIA_ITEM_7": "7.EVOLUCIONAR / Monitoreo y Control",
+
+    "MEDIOS_TITLE_1": "Gestión \n de Medios",
+    "MEDIOS_TEXT_1": "Nos especializamos en la compra de medios y la producción de soluciones e ideas integrales aplicables en social media. Desarrollamos el diseño, la edición y la estrategia de comunicación de tus proyectos. Optimizamos e implementamos las campañas de marketing con influencers para generar mayor impacto mediático.",
+
+    "ENTRETENIMIENTO_TITLE_1": "Entretenimiento",
+    "ENTRETENIMIENTO_TEXT_1": "Nos especializamos en la ejecución de acciones en social media y contenido con influencers en todas las plataformas. Nuestro equipo de marketing le da un especio a talentos nuevos o conocidos para que saquen provecho de los espacios audiovisuales e interactuen con el público. Desarrollamos y administramos contenidos, generadno fuentes de exposición para que moneticen su potencial.",
+
+    "PAGE404_TEXT_1": "Oops! Page not found",
+    "PAGE404_TEXT_2": "lo sentimos, pero la página solicitada no fue encontrada",
+
+    "COMPONENTE_BTN_CONTACTO_TEXT_1": "Contacto"
 }

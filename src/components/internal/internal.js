@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 // SCSS
 import './internal.scss'
 
+//Languages
+import { withTranslation } from 'react-i18next'
+
 class Internal extends Component {
 
     constructor(props) {
@@ -9,10 +12,13 @@ class Internal extends Component {
     }
 
     render() {
-        const { 
+        var { 
             title,
             paragraph
          } = this.props
+
+        title = this.props.t(title);
+        paragraph = this.props.t(paragraph)
 
         return (
             <div className="internal-component">
@@ -33,4 +39,4 @@ class Internal extends Component {
     }
 }
 
-export default Internal
+export default withTranslation()(Internal)

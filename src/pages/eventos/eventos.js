@@ -4,6 +4,7 @@ import Main from '../main/main'
 import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
 
 import './eventos.scss'
 
@@ -11,8 +12,8 @@ import {data} from './data';
 
 function Eventos ( props ) {
 
-    var title = 'Producción \n y Eventos'
-    var paragraph = 'Somos un productora especializada en generar contenido audiovisual en todos sus aspectos. Películas, programas de TV, documentales, y programas de radio. Desarrollamos eventos deportivos , comerciales e internacionales. Nos encargamos de la producción e implementación audiovisual campañas de comunicación, gestion de prensa, RRSS, la cobertura en vivo y streaming.'
+    var title = 'EVENTOS_TITLE_1'
+    var paragraph = 'EVENTOS_TEXT_1'
 
     return (
         <Main>
@@ -28,6 +29,8 @@ function Eventos ( props ) {
                 <div className="page-contacto">
                     <BtnContacto />
                 </div>
+
+                <BtnLanguage />
             </div>
         </Main>
     );

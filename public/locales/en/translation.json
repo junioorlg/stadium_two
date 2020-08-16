@@ -3,5 +3,35 @@
     "Nombre": "Name",
     "Mail": "Email",
     "Mensaje": "Message",
-    "ENVIAR": "SEND"
+    "ENVIAR": "SEND",
+    "CONTACTO_MESSAGE_SENT": "Message was sent!",
+
+    "EQUIPO_TEXT_1": "We are a full-service communications agency with more than 20 years in the local and regional market. We provide strategy, creativity and media content management solutions for various industries and opinion makers. On-going innovation in our work result in effectiveness and businesses which ratify our relationship with clients year after year.",
+    
+    "DEPORTE_TITLE_1": "Sports \n Marketing",
+    "DEPORTE_TEXT_1": "Development and implementation of comprehensive strategies in the sports industry. We offer general advisory services for brands, players, institutions and sponsors, which run the gamut from 360 communications strategy, event production and commercial brand activation to the management of sport careers.",
+
+    "EVENTOS_TITLE_1": "Production \n and Events",
+    "EVENTOS_TEXT_1": "We are a producer that specializes in generating audiovisual content of all kinds, from movies, TV programs and documentaries to radio programs. We offer full services for the development of sports, commercial and/or institutional events: audiovisual production and implementation, communication campaigns, press management, Public Relations, live coverage and streaming.",
+
+    "ESTRATEGIA_TITLE_1": "Research \n and Strategy",
+    "ESTRATEGIA_TEXT_1": "Strategy and execution aimed at election processes and organization management. Our methodology is built as follows:",
+    "ESTRATEGIA_ITEM_1": "1.LISTEN / Digital surveys",
+    "ESTRATEGIA_ITEM_2": "2.DEVELOP / Strategy and Planning",
+    "ESTRATEGIA_ITEM_3": "3.COMMUNICATE / Production of content",
+    "ESTRATEGIA_ITEM_4": "4.AMPLIFY/ Purchase of advertising space on official media",
+    "ESTRATEGIA_ITEM_5": "5.REPORT/ Advertising space for information purposes",
+    "ESTRATEGIA_ITEM_6": "6.BUILD LOYALTY/ Territory",
+    "ESTRATEGIA_ITEM_7": "7.EVOLVE/ Monitoring and Control",
+
+    "MEDIOS_TITLE_1": "Media \n Management",
+    "MEDIOS_TEXT_1": "We are a comprehensive communications agency specializing in the purchase of media, production of ideas, social media, design and editing, optimization and influencers.",
+
+    "ENTRETENIMIENTO_TITLE_1": "Entertainment",
+    "ENTRETENIMIENTO_TEXT_1": "We generate content for all platforms. We specialize in actions on social media and content with influencers. Our marketing team adds a new space, giving opportunities to new talents and to talents that are already known to take advantage of the audiovisual platforms provided by the digital environment to interact with the consumer public. We develop the communication and management of digital content, generating a new source of exposure for talents to monetize their impact potential.",
+
+    "PAGE404_TEXT_1": "Oops! Page not found",
+    "PAGE404_TEXT_2": "we are sorry, but the page you requested was not found",
+
+    "COMPONENTE_BTN_CONTACTO_TEXT_1": "Contact"
 }

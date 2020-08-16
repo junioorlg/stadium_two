@@ -15,8 +15,8 @@ function Medios ( props ) {
 
     const { t } = useTranslation();
 
-    var title = 'Gestión \n de Medios'
-    var paragraph = 'Nos especializamos en la compra de medios y la producción de soluciones e ideas integrales aplicables en social media. Desarrollamos el diseño, la edición y la estrategia de comunicación de tus proyectos. Optimizamos e implementamos las campañas de marketing con influencers para generar mayor impacto mediático.'
+    var title = 'MEDIOS_TITLE_1'
+    var paragraph = 'MEDIOS_TEXT_1'
 
     return (
         <Main>

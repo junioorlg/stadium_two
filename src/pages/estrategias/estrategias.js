@@ -1,16 +1,18 @@
 import React from 'react'
 import Main from '../main/main'
 
-import Gallery from './../../components/gallery/gallery'
-import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
+import { useTranslation } from 'react-i18next'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
 
 import './estrategias.scss'
 
 function Estrategias ( props ) {
 
-    var title = 'Research \n y estrategia'
-    var paragraph = 'Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra metodología se contruye así:'
+    const { t } = useTranslation();
+
+    var title = t('ESTRATEGIA_TITLE_1')
+    var paragraph = t('ESTRATEGIA_TEXT_1')
 
     return (
         <Main>
@@ -25,13 +27,13 @@ function Estrategias ( props ) {
                         </h1>
                         <p>{paragraph}</p>
                         <ul className="menu-estrategias">
-                            <li>1.ESCUCHAR / Encuestas Digitales</li>
-                            <li>2.DESARROLLAR / Estrategia y Planificación</li>
-                            <li>3.COMUNICAR / Producción de Contenidos</li>
-                            <li>4.AMPLIFICAR / Pauta Oficial</li>
-                            <li>5.INFORMAR / Pauta Informativa</li>
-                            <li>6.FIDELIZAR / Territorio</li>
-                            <li>7.EVOLUCIONAR / Monitoreo y Control</li>
+                            <li>{ t('ESTRATEGIA_ITEM_1') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_2') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_3') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_4') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_5') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_6') }</li>
+                            <li>{ t('ESTRATEGIA_ITEM_7') }</li>
                         </ul>
                     </div>
                     <div className="col s12 m6">
@@ -42,6 +44,9 @@ function Estrategias ( props ) {
                 <div className="page-contacto">
                     <BtnContacto />
                 </div>
+
+                <BtnLanguage />
+
             </div>
         </Main>
     );

@@ -12,63 +12,55 @@ class Menu extends Component {
     constructor() {
         super();
 
-        this.state = {logoStadium: logo}
+        this.state = { logoStadium: logo }
     }
 
-    closeMenu () {
-        console.log('debe cerrar menu');
-        //var elems = document.querySelectorAll('.sidenav');
+    componentDidMount() {
+        const body = document.querySelector('body');
+        const elmsToDelete = document.querySelectorAll('.sidenav-overlay, .drag-target.right-aligned')
+
+        const activeMenu     = document.querySelector( '#active-submenu' );
+        const contentMenu    = document.querySelector( '.content-menu' );
+        const contentSubMenu = document.querySelector( '.content-submenu' );
+
+        const elems       = document.querySelectorAll('.sidenav');
+        const solialLink  = document.querySelectorAll('.social-link');
+        const iconBurguer = document.querySelector('.sidenav-trigger');
+        const options     = {
+            edge: "right",
+            inDuration: 800,
+            outDuration: 800,
+            onOpenStart: () => {
+                iconBurguer.classList.add( 'hide-opacity' );
+
+                [].forEach.call( solialLink, function( elm ) {
+                    elm.classList.add( 'white-text' );
+                });
+            },
+            onOpenEnd: () => {},
+            onCloseStart : () => {},
+            onCloseEnd : () => {
+                iconBurguer.classList.remove( 'hide-opacity' );
+
+                [].forEach.call( solialLink, function( elm ) {
+                    elm.classList.remove( 'white-text' );
+                });
+            }
+        };
+
+        M.Sidenav.init(elems, options);
+            
+        activeMenu.addEventListener( 'click', function( event ) {
+            contentMenu.classList.toggle( 'active-submenu' );
+            contentSubMenu.classList.toggle( 'active' );
+        });
+
+        body.removeAttribute('style');
+        elmsToDelete.forEach(elm => elm.remove());
     }
 
     render() {
-        const that = this;
         const {logoStadium} = this.state
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems       = document.querySelectorAll('.sidenav');
-            var solialLink  = document.querySelectorAll('.social-link');
-            var iconBurguer = document.querySelector('.sidenav-trigger');
-
-            /* menu */
-            var activeMenu     = document.querySelector( '#active-submenu' );
-            var contentMenu    = document.querySelector( '.content-menu' );
-            var contentSubMenu = document.querySelector( '.content-submenu' );
-            
-            activeMenu.addEventListener( 'click', function( event ) {
-                contentMenu.classList.toggle( 'active-submenu' );
-                contentSubMenu.classList.toggle( 'active' );
-            });
-
-            M.Sidenav.init(elems, {
-                edge: "right",
-                inDuration: 800,
-                outDuration: 800,
-                onOpenStart: () => {
-
-                    console.log(solialLink)
-
-                    iconBurguer.classList.add( 'hide-opacity' );
-
-                    [].forEach.call( solialLink, function( elm ) {
-                        elm.classList.add( 'white-text' );
-                    });
-                },
-                onOpenEnd: () => {
-                    //that.setState({ logoStadium: logoW })
-                    
-                },
-                onCloseStart : () => {
-                    //that.setState({ logoStadium: logo })
-                },
-                onCloseEnd : () => {
-                    iconBurguer.classList.remove( 'hide-opacity' );
-
-                    [].forEach.call( solialLink, function( elm ) {
-                        elm.classList.remove( 'white-text' );
-                    });
-                }
-            });
-        });
 
         return (
             <div className="menu-component">

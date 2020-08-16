@@ -51,13 +51,15 @@
     }
 
     .box-preview {
-        height: 100px;
+        height: 200px;
         border: 1px solid #fff;
         
         .box-preview-bg {
-            height: 92px;
+            height: 200px;
             background-position: center;
             background-size: cover;
+            transition: all 1s;
+
             &.inactive {
                 filter: grayscale(1);
             }

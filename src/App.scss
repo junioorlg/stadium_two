@@ -5,7 +5,7 @@
 }
 
 body {
-  	overflow: hidden;
+    overflow: hidden;
 }
 
 .hide-opacity {
@@ -14,6 +14,11 @@ body {
 
 .page-internal {
   	padding: 70px 20px;
+}
+
+.container {
+    opacity: 0;
+    transition: all 1s;
 }
 
 .container-internal{

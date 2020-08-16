@@ -24,7 +24,7 @@ function Estrategias ( props ) {
                             })}
                         </h1>
                         <p>{paragraph}</p>
-                        <ul class="menu-estrategias">
+                        <ul className="menu-estrategias">
                             <li>1.ESCUCHAR / Encuestas Digitales</li>
                             <li>2.DESARROLLAR / Estrategia y Planificación</li>
                             <li>3.COMUNICAR / Producción de Contenidos</li>

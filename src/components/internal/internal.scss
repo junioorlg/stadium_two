@@ -9,4 +9,14 @@
         font-family: 'GalanoGrotesque';
         font-size: 1em;
     }
+
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 2.5em;
+        }
+    
+        p {
+            font-size: 1em;
+        }
+    }
 }

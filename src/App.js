@@ -24,7 +24,7 @@ import Medios from './pages/medios/medios'
 class App extends Component {
 	render() {
 		return (
-			<div className="stadium">	
+			<div className="stadium">
 				<Router>
 					
 					<Switch>

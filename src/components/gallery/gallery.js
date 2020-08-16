@@ -97,7 +97,10 @@ class Gallery extends Component {
                 settings: {
                     slidesToShow: 1,
                     vertical: false,
-                    arrows: false
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    infinite: true,
                 }
               }
             ]

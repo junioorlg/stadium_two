@@ -5,20 +5,20 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/medios/caratula-medios.png',
-		imgPreview: './media/gallery/medios/caratula-medios.png'
+		isVideo: true,
+		idYoutube: 'ZG050eUK--g',
+		imgSlider: './media/gallery/medios/reel.jpg',
+		imgPreview: ''
 	},
 	{
 		id: 2,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/medios/caratula-medios.png',
-		imgPreview: './media/gallery/medios/caratula-medios.png'
+		isVideo: true,
+		idYoutube: '5ghUmE4lSyE',
+		imgSlider: './media/gallery/medios/PokerStars.jpg',
+		imgPreview: ''
 	},
 	
 ];

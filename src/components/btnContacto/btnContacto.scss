@@ -7,4 +7,10 @@
         font-size: 1.2em;
         letter-spacing: 2px;
     }
+
+    @media only screen and (max-width: 600px) {
+        position: absolute;
+        bottom: 30px;
+        left: 29%;
+    }
 }

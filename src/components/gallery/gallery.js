@@ -81,13 +81,15 @@ class Gallery extends Component {
             isCloseModal
         } = this.state
 
-        const cantSlider = this.props.data.length > 3 ? 4 : 2;
+        const cantElms = this.props.data.length
+
+        const cantSlideToShow = cantElms > 3 ? 4 : (cantElms > 2 ? 3 : 2);
 
         const settingsSlider = {
             dots: false,
             infinite: false,
             speed: 500,
-            slidesToShow: cantSlider,
+            slidesToShow: cantSlideToShow,
             vertical: false,
             swipeToSlide: true,
             draggable: true,

@@ -13,9 +13,9 @@ function Social ( props ) {
     return (
         <div className="social-component">
             <ul>
-                <li><a className="social-link" href="google.com">instagram</a></li>
-                <li><a className="social-link" href="google.com">twiter</a></li>
-                <li><a className="social-link" href="google.com">linkedin</a></li>
+                <li><a className="social-link" href="https://www.instagram.com/stadiumglobal/" target="_blank">instagram</a></li>
+                <li><a className="social-link" href="https://twitter.com/stadiumglobal1" target="_blank">twiter</a></li>
+                <li><a className="social-link" href="https://www.linkedin.com/company/stadium-global/" target="_blank">linkedin</a></li>
                 <li>
                     <a className="social-link lang-selector" href="#" onClick={()=>handleClick('en')}>EN</a> / &nbsp;
                      <a className="social-link lang-selector" href="#" onClick={()=>handleClick('es')}>ES</a>

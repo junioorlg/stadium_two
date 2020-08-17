@@ -5,10 +5,10 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg',
-		imgPreview: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg'
+		isVideo: true,
+		idYoutube: 'Eprbje4FjJs',
+		imgSlider: './media/gallery/deportivo/ypf.jpg',
+		imgPreview: ''
 	},
 	{
 		id: 2,
@@ -16,39 +16,19 @@ export const data =
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: 'OdAQrzhXzgY',
-		imgSlider: './media/gallery/deportivo/caratula-YPF-MKT-Deportivo.jpg',
-		imgPreview: './media/gallery/deportivo/caratula-YPF-MKT-Deportivo.jpg'
+		idYoutube: 'vOEKD5jfY-8',
+		imgSlider: './media/gallery/deportivo/RRSSstories.jpg',
+		imgPreview: ''
     },
     {
 		id: 3,
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
+		isVideo: true,
+		idYoutube: 'HbEuFNo0xhs',
 		imgSlider: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg',
-		imgPreview: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg'
-    },
-    {
-		id: 4,
-		name: 'Lorem ipsum',
-		anio: 2018,
-		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg',
-		imgPreview: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg'
-    },
-    {
-		id: 5,
-		name: 'Lorem ipsum',
-		anio: 2018,
-		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg',
-		imgPreview: './media/gallery/deportivo/Inter-MKT-Deportivocuadrado.jpg'
-	},
+		imgPreview: ''
+    }
 	
 ];

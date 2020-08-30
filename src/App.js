@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 
-/* router */
+/* router MemoryRouter | HashRouter*/
 import {
 	BrowserRouter as Router,
 	Switch,

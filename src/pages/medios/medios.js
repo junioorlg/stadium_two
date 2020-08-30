@@ -5,15 +5,12 @@ import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
 import BtnLanguage from './../../components/btnLanguage/btnLanguage'
-import { useTranslation } from 'react-i18next'
 
 import './medios.scss'
 
 import {data} from './data';
 
 function Medios ( props ) {
-
-    const { t } = useTranslation();
 
     var title = 'MEDIOS_TITLE_1'
     var paragraph = 'MEDIOS_TEXT_1'

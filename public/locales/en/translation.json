@@ -1,4 +1,6 @@
 {
+    "Servicios": "Services",
+    "Equipo": "Team",
     "Contacto": "Contact",
     "Nombre": "Name",
     "Mail": "Email",
@@ -6,7 +8,14 @@
     "ENVIAR": "SEND",
     "CONTACTO_MESSAGE_SENT": "Message was sent!",
 
-    "EQUIPO_TEXT_1": "We are a full-service communications agency with more than 20 years in the local and regional market. We provide strategy, creativity and media content management solutions for various industries and opinion makers. On-going innovation in our work result in effectiveness and businesses which ratify our relationship with clients year after year.",
+    "Deporte": "Sports",
+    "Eventos": "Events",
+    "Estrategias": "Strategy",
+    "Gestion_medios": "Media Management",
+    "Entretenimiento": "Entertainment",
+
+    "EQUIPO_TEXT_1": "We are a full-service communications agency with more than 20 years in the local and regional market. We provide strategy, creativity and media content management solutions for various industries and opinion makers.",
+    "EQUIPO_TEXT_2": "On-going innovation in our work result in effectiveness and businesses which ratify our relationship with clients year after year.",
     
     "DEPORTE_TITLE_1": "Sports \n Marketing",
     "DEPORTE_TEXT_1": "Development and implementation of comprehensive strategies in the sports industry. We offer general advisory services for brands, players, institutions and sponsors, which run the gamut from 360 communications strategy, event production and commercial brand activation to the management of sport careers.",

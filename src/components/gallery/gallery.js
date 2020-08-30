@@ -19,8 +19,6 @@ class Gallery extends Component {
 
         this.state = {
             name: firstSlider.name,
-            anio: firstSlider.anio,
-            description: firstSlider.description,
             imgPreview: firstSlider.imgPreview,
             idYoutube: firstSlider.idYoutube,
             isVideo: firstSlider.isVideo,
@@ -67,14 +65,11 @@ class Gallery extends Component {
 
     render() {
         const { 
-            data,
-            title
+            data
          } = this.props
 
         const { 
-            name, 
-            anio, 
-            description, 
+            name,
             imgPreview, 
             idYoutube, 
             isVideo,
@@ -158,7 +153,7 @@ class Gallery extends Component {
                             name={name}/>
                     </div>
 
-                    <a href="#" className="modal-close"></a>
+                    <a href="# " className="modal-close">&nbsp;</a>
                 </div>
 
 

@@ -3,6 +3,7 @@
     padding: 15px 25px;
     width: 100%;
     top: 0;
+    z-index: 1;
 
     .brand-logo {
         position: relative;
@@ -19,6 +20,7 @@
     .sidenav {
         width: 100vw;
         background-color: rgba(255, 0, 0, 0.8);
+        
         .item-close {
             position: absolute;
             right: 25px;
@@ -112,4 +114,8 @@
 
 .sidenav-overlay {
     background: none;
+}
+
+.sidenav-overlay {
+    display: none !important;
 }

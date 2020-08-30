@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import Main from '../main/main'
 import './equipo.scss';
 import BtnContacto from './../../components/btnContacto/btnContacto'
@@ -25,7 +24,11 @@ class Equipo extends Component {
                 <div className="container equipo">
                     <div className="row">
                         <div className="col m10 offset-m1 s12 valign-wrapper">
-                            <p className="equipo-about">{ this.props.t('EQUIPO_TEXT_1') }</p>
+                            <div>
+                                <p className="equipo-about">{ this.props.t('EQUIPO_TEXT_1') }</p>
+                                <br />
+                                <p className="equipo-about">{ this.props.t('EQUIPO_TEXT_2') }</p>
+                            </div>
                         </div>
                     </div>
 

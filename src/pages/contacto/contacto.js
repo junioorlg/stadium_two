@@ -58,7 +58,7 @@ function Contacto ( props ) {
                        <form onSubmit={sendEmail}>
                            <div className="input-field form-group">
                                <input className="form-control" type="text" name="nombre" required="required"/>
-                               <label htmlFor="nombre">{t('Nombre')}</label>
+                               <label htmlFor="nombre">{t('Nombre')} *</label>
                            </div>
 
                            <div className="input-field form-group">
@@ -68,7 +68,7 @@ function Contacto ( props ) {
 
                             <div className="input-field form-group">
                                 <textarea name="mensaje" className="materialize-textarea" required="required"></textarea>
-                                <label htmlFor="mensaje">{t('Mensaje')}</label>
+                                <label htmlFor="mensaje">{t('Mensaje')} *</label>
                             </div>
 
                             <div className="col m12 contacto-btn-submitter">

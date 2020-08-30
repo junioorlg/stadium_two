@@ -7,7 +7,7 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: true,
 		idYoutube: 'ZG050eUK--g',
-		imgSlider: './media/gallery/medios/reel.jpg',
+		imgSlider: './media/gallery/medios/reel.png',
 		imgPreview: ''
 	},
 	{

@@ -489,7 +489,7 @@ $(function () {
             this.fovOffset = 1;
             if (window.innerWidth < 640) {
                 this.isMobile = true;
-                this.extraParticles = 5;
+                this.extraParticles = 0;
                 this.fovOffset = 1.2;
             }
 
@@ -534,28 +534,6 @@ $(function () {
                     {
                         textParams: {
                             fontface: 'DINNextLTPro-Regular',
-                            fontsize: 20,
-                            backgroundColor: {r: 255, g: 255, b: 255, a: 0},
-                            borderThickness: 24,
-                            borderColor: {r: 255, g: 255, b: 255, a: 0},
-                            textColor: {r: 40, g: 50, b: 77, a:1},
-
-                        },
-                        baseColor: '#2D324D',
-                        scale: 2,
-                        points: [
-                            {label: '                 Servicios', connections: [], url: '/stadium/servicios',cVParents:[2], idx: 1},
-                            {label: '                  Historia', connections: [0,1], url: '/stadium/historia',cVParents:[2], idx: 2},
-                            {label: '                  Nosotros', connections: [0,1,2], url: '/stadium/nosotros',cVParents:[2], idx: 3},
-                            {label: '                  Contacto', connections: [1,2,3], url: '/stadium/contacto',cVParents:[3], idx: 4},
-                            {label: '                 Deportes', connections: [1,2,3], url: 'http://localhost:3000/deportes',cVParents:[3], idx: 5},
-                        ],
-                        extra: false
-                        //todo update art fashion links
-                    },
-                    {
-                        textParams: {
-                            fontface: 'DINNextLTPro-Regular',
                             fontsize: 30,
                             backgroundColor: {r: 255, g: 255, b: 255, a: 0},
                             borderThickness: 24,
@@ -563,25 +541,16 @@ $(function () {
                             textColor: {r: 255, g: 0, b: 0, a:0.9},
 
                         },
-                        baseColor: '#FF221C',
+                        baseColor: '#2D324D',
                         scale: 2,
                         points: [
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
-                            {label: '', connections: [],cVParents:[1]},
+                            {label: '', connections: [],cVParents:[0]},
+                            {label: '', connections: [0,1],cVParents:[0]},
+                            {label: '', connections: [0,1],cVParents:[0]},
+                            {label: '', connections: [1,2],cVParents:[0]},
+                            {label: '', connections: [2,3],cVParents:[0]},
+                            {label: '', connections: [3,4,5],cVParents:[0]},
+                            {label: '', connections: [1,2],cVParents:[0]},
                         ],
                         extra: true
                         //todo update art fashion links
@@ -601,11 +570,11 @@ $(function () {
              this.bgExtrasCam.position.z = 420;
              this.bgExtrasScene.add(this.bgExtrasCam);
              this.pointTrios = [];
-             for (var j = 0; j < this.backgroundParticleGroups; j++) {
+             /*for (var j = 0; j < this.backgroundParticleGroups; j++) {
                  var pointTrio = new PointTrio();
                  this.pointTrios.push(pointTrio.group);
                  this.bgExtrasScene.add(pointTrio.group);
-             }
+             }*/
             //add background image
             //pendiente 1
            // var bgTexture = new THREE.TextureLoader().load( '../static/img/home-background.jpg' );
@@ -620,9 +589,9 @@ $(function () {
             this.bgScene.add(bg);
             var opacity;
             if (_this.isWebGL) {
-                opacity = 0.15;
+                opacity = 0.7;
             } else {
-                opacity = 0.1;
+                opacity = 0.7;
             }
 
             sets.forEach(function(set, idx){

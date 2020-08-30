@@ -26,7 +26,7 @@ export const data =
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: 'JmjKOYyWKjE',
+		idYoutube: 'iZEmufVkVRE',
 		imgSlider: './media/gallery/entretenimiento/caratula_nueva.png',
 		imgPreview: './media/gallery/entretenimiento/caratula_nueva.png'
 	}

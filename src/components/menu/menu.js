@@ -3,7 +3,10 @@ import M from 'materialize-css';
 import './menu.scss';
 
 import logo  from './../../media/logo-stadium.png'
-import logoW from './../../media/logo-stadium-w.png'
+//import logoW from './../../media/logo-stadium-w.png'
+
+//Languages
+import { withTranslation } from 'react-i18next'
 
 import { Link } from "react-router-dom";
 
@@ -24,13 +27,14 @@ class Menu extends Component {
         const contentSubMenu = document.querySelector( '.content-submenu' );
 
         const elems       = document.querySelectorAll('.sidenav');
-        const solialLink  = document.querySelectorAll('.social-link');
         const iconBurguer = document.querySelector('.sidenav-trigger');
         const options     = {
             edge: "right",
             inDuration: 800,
             outDuration: 800,
             onOpenStart: () => {
+                const solialLink  = document.querySelectorAll('.social-link');
+
                 iconBurguer.classList.add( 'hide-opacity' );
 
                 [].forEach.call( solialLink, function( elm ) {
@@ -40,6 +44,8 @@ class Menu extends Component {
             onOpenEnd: () => {},
             onCloseStart : () => {},
             onCloseEnd : () => {
+                const solialLink  = document.querySelectorAll('.social-link');
+
                 iconBurguer.classList.remove( 'hide-opacity' );
 
                 [].forEach.call( solialLink, function( elm ) {
@@ -76,18 +82,18 @@ class Menu extends Component {
                         </div>
 
                         <div className="content-menu">
-                            <li id="active-submenu" className="link-menu"><a href="#">Servicios</a></li>
+                            <li id="active-submenu" className="link-menu"><a href="# ">{ this.props.t('Servicios') }</a></li>
                             
                             <ul className="content-submenu">
-                                <li className="link-submenu"><Link to="/deportes">Deporte</Link></li>
-                                <li className="link-submenu"><Link to="/eventos">Eventos</Link></li>
-                                <li className="link-submenu"><Link to="/estrategias">Estrategias</Link></li>
-                                <li className="link-submenu"><Link to="/medios">Gestión de medios</Link></li>
-                                <li className="link-submenu"><Link to="/entretenimientos">Entretenimiento</Link></li>
+                                <li className="link-submenu"><Link to="/deportes">{ this.props.t('Deporte') }</Link></li>
+                                <li className="link-submenu"><Link to="/eventos">{ this.props.t('Eventos') }</Link></li>
+                                <li className="link-submenu"><Link to="/estrategias">{ this.props.t('Estrategias') }</Link></li>
+                                <li className="link-submenu"><Link to="/medios">{ this.props.t('Gestion_medios') }</Link></li>
+                                <li className="link-submenu"><Link to="/entretenimientos">{ this.props.t('Entretenimiento') }</Link></li>
                             </ul>
 
-                            <li className="link-menu"><Link to="/equipo">Equipo</Link></li>
-                            <li className="link-menu"><Link to="/contacto">Contacto</Link></li>
+                            <li className="link-menu"><Link to="/equipo">{ this.props.t('Equipo') }</Link></li>
+                            <li className="link-menu"><Link to="/contacto">{ this.props.t('Contacto') }</Link></li>
                         </div>
                     </ul>
 
@@ -99,4 +105,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default withTranslation()(Menu);

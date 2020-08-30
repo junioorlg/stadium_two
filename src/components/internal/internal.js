@@ -7,10 +7,6 @@ import { withTranslation } from 'react-i18next'
 
 class Internal extends Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         var { 
             title,

@@ -17,7 +17,7 @@ import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 ReactDOM.render(
-    <Suspense fallback={(<div>Loading...</div>)}>
+    <Suspense fallback={(<div className="se-pre-con"></div>)}>
         <App />
     </Suspense>
     , document.getElementById('root'));

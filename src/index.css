@@ -16,6 +16,18 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
 @font-face {
     font-family: 'GalanoGrotesqueBold';
     src: local('GalanoGrotesqueBold'), url(./fonts/Galano_Grotesque_Bold.otf) format('truetype');
@@ -39,4 +51,10 @@ code {
 @font-face {
     font-family: 'GalanoGrotesqueSemiBold';
     src: local('GalanoGrotesqueSemiBold'), url(./fonts/Galano_Grotesque_Semi_Bold.otf) format('truetype');
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: none !important;
+    }
 }

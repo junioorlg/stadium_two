@@ -223,8 +223,11 @@
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px), screen and (max-height: 700px) {
         .content-animation {
+            width: 600px;
+            height: 710px;
+            
             width: 350px;
             height: 415px;
         }
@@ -237,6 +240,10 @@
         .content-animation .circle-shadow {
             top: 35px;
             height: 12px;
+        }
+
+        .home .content-nodos .label {
+            display: none;
         }
 
         .home .content-nodos .lines .line[data-number="1"] { top: 25.5%; }

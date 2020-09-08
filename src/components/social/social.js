@@ -32,8 +32,8 @@ function Social ( props ) {
                 </li>
                 
                 <li>
-                    <a className="social-link lang-selector" href="# " onClick={()=>handleClick('en')}>EN</a>&nbsp;<span className="social-link">/</span>&nbsp;
-                    <a className="social-link lang-selector" href="# " onClick={()=>handleClick('es')}>ES</a>
+                    <span className="social-link lang-selector" onClick={()=>handleClick('en')}>EN</span>&nbsp;<span className="social-link">/</span>&nbsp;
+                    <span className="social-link lang-selector" onClick={()=>handleClick('es')}>ES</span>
                 </li>
             </ul>
         </div>

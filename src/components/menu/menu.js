@@ -82,7 +82,7 @@ class Menu extends Component {
                         </div>
 
                         <div className="content-menu">
-                            <li id="active-submenu" className="link-menu"><a href="# ">{ this.props.t('Servicios') }</a></li>
+                            <li id="active-submenu" className="link-menu"><span>{ this.props.t('Servicios') }</span></li>
                             
                             <ul className="content-submenu">
                                 <li className="link-submenu"><Link to="/deportes">{ this.props.t('Deporte') }</Link></li>

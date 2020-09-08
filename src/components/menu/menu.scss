@@ -38,7 +38,7 @@
             text-transform: uppercase;
             transition: all 1.5s;
 
-            a {
+            a, span {
                 height: auto;
                 color: #fff;
                 font-size: 2rem;
@@ -70,7 +70,7 @@
             &.active-submenu {
                 margin-top: 20vh;
                 .link-menu {
-                    a {
+                    a, span {
                         font-size: 1.2rem;
                     }
                 }
@@ -94,7 +94,7 @@
             .content-menu {
                 width: 50%;
 
-                a {
+                a, span {
                     margin-bottom: 25px;
                     letter-spacing: 8px;
                     font-size: 3.2rem;
@@ -102,7 +102,7 @@
 
                 &.active-submenu {
                     .link-menu {
-                        a {
+                        a, span {
                             font-size: 1.5rem;
                         }
                     }
@@ -118,4 +118,14 @@
 
 .sidenav-overlay {
     display: none !important;
+}
+
+@media screen and (min-width: 900px) and (max-height: 700px) {
+    .menu-component .sidenav .content-menu a, 
+    .menu-component .sidenav .content-menu span {
+        margin-bottom: 15px;
+    }
+    .menu-component .sidenav .content-menu.active-submenu {
+        margin-top: 10vh;
+    }
 }

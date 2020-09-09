@@ -11,13 +11,17 @@
     }
 
     @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 2.5em;
-        }
+        h1 { font-size: 2.2em; margin-bottom: 15px; }
     
-        p {
-            font-size: 1em;
-        }
+        p { font-size: 1em; }
+    }
+
+    @media screen and (max-width: 330px) {
+        h1 { font-size: 1.5em; margin-bottom: 10px; }
+    
+        p { font-size: .9em; line-height: 1.2em; }
+
+        .row { margin-bottom: 0; }
     }
 
     @media screen and (min-width: 900px) and (max-height: 700px) {

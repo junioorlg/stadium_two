@@ -82,6 +82,15 @@ body {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .container.container-deportivo,
+    .container.container-entretenimientos,
+    .container.container-medios,
+    .container.container-eventos {
+        margin-top: 60px;
+    }
+}
+
 @media screen and (min-width: 900px) and (max-height: 700px) {
     .container.container-deportivo,
     .container.container-entretenimientos,

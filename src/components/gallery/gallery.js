@@ -153,7 +153,7 @@ class Gallery extends Component {
                             name={name}/>
                     </div>
 
-                    <a href="# " className="modal-close">&nbsp;</a>
+                    <span href="# " className="modal-close">&nbsp;</span>
                 </div>
 
 

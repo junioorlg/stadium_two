@@ -1,5 +1,5 @@
 .gallery-component {
-    padding-top: 30px;
+    padding-top: 10px;
 
     h5 {
         font-family: 'GalanoGrotesqueBold';
@@ -146,6 +146,8 @@
     }    
 
     @media (min-width: 720px) {
+        padding-top: 30px;
+
         h5 {
             font-family: 'GalanoGrotesque';
         }

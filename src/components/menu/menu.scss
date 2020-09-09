@@ -40,11 +40,12 @@
 
             a, span {
                 height: auto;
+                display: block;
                 color: #fff;
                 font-size: 2rem;
                 cursor: pointer;
                 letter-spacing: 2px;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 transition: all 1.5s;
                 font-family: 'GalanoGrotesqueBold';
                 
@@ -68,7 +69,8 @@
             }
 
             &.active-submenu {
-                margin-top: 20vh;
+                margin-top: 8vh;
+
                 .link-menu {
                     a, span {
                         font-size: 1.2rem;
@@ -101,6 +103,8 @@
                 }
 
                 &.active-submenu {
+                    margin-top: 20vh;
+
                     .link-menu {
                         a, span {
                             font-size: 1.5rem;

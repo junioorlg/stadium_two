@@ -20,12 +20,6 @@ function Social ( props ) {
                 </li>
 
                 <li>
-                    <a className="social-link" href="https://twitter.com/stadiumglobal1" target="_blank" rel="noopener noreferrer">
-                        twiter
-                    </a>
-                </li>
-
-                <li>
                     <a className="social-link" href="https://www.linkedin.com/company/stadium-global/" target="_blank" rel="noopener noreferrer">
                         linkedin
                     </a>

@@ -1,6 +1,6 @@
 {
     "Servicios": "Services",
-    "Equipo": "Team",
+    "Equipo": "About Us",
     "Contacto": "Contact",
     "Nombre": "Name",
     "Mail": "Email",
@@ -17,13 +17,13 @@
     "EQUIPO_TEXT_1": "We are a full-service communications agency with more than 20 years in the local and regional market. We provide strategy, creativity and media content management solutions for various industries and opinion makers.",
     "EQUIPO_TEXT_2": "On-going innovation in our work result in effectiveness and businesses which ratify our relationship with clients year after year.",
     
-    "DEPORTE_TITLE_1": "Sports \n Marketing",
+    "DEPORTE_TITLE_1": "Sports",
     "DEPORTE_TEXT_1": "Development and implementation of comprehensive strategies in the sports industry. We offer general advisory services for brands, players, institutions and sponsors, which run the gamut from 360 communications strategy, event production and commercial brand activation to the management of sport careers.",
 
-    "EVENTOS_TITLE_1": "Production \n and Events",
+    "EVENTOS_TITLE_1": "Events",
     "EVENTOS_TEXT_1": "We are a producer that specializes in generating audiovisual content of all kinds, from movies, TV programs and documentaries to radio programs. We offer full services for the development of sports, commercial and/or institutional events: audiovisual production and implementation, communication campaigns, press management, Public Relations, live coverage and streaming.",
 
-    "ESTRATEGIA_TITLE_1": "Research \n and Strategy",
+    "ESTRATEGIA_TITLE_1": "Strategy",
     "ESTRATEGIA_TEXT_1": "Strategy and execution aimed at election processes and organization management. Our methodology is built as follows:",
     "ESTRATEGIA_ITEM_1": "1.LISTEN / Digital surveys",
     "ESTRATEGIA_ITEM_2": "2.DEVELOP / Strategy and Planning",

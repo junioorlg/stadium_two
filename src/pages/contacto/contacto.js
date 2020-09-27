@@ -36,16 +36,13 @@ function Contacto ( props ) {
 
                 <div className="row">
                     <div className="col m5 offset-m1 s12">
+                        <br />
+                        <br />
+                        <br />
                         <div className="col m12 s6">
                             <p className="contacto-paragraph"><strong>Buenos Aires</strong></p>
                             <p className="contacto-paragraph">Sucre 632, 3er Piso</p>
                             <p className="contacto-paragraph">CABA, Argentina</p>
-                            <br />
-                        </div>
-                        <div className="col m12 s6">
-                            <p className="contacto-paragraph"><strong>Sao Paulo</strong></p>
-                            <p className="contacto-paragraph">Rua Butanta 510</p>
-                            <p className="contacto-paragraph">Pinheiros, Sao Paulo, Brasil</p>
                             <br />
                         </div>
                         <div className="col m12 s12">

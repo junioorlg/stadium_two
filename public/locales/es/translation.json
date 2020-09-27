@@ -1,6 +1,6 @@
 {
     "Servicios": "Servicios",
-    "Equipo": "Equipo",
+    "Equipo": "Nosotros",
     "Contacto": "Contacto",
     "Nombre": "Nombre",
     "Mail": "Mail",
@@ -9,15 +9,15 @@
     "CONTACTO_MESSAGE_SENT": "Mensaje enviado!",
 
     "Deporte": "Deporte",
-    "Eventos": "Eventos",
-    "Estrategias": "Estrategias",
+    "Eventos": "Producción y eventos",
+    "Estrategias": "Research y estrategia",
     "Gestion_medios": "Gestión de medios",
     "Entretenimiento": "Entretenimiento",
 
     "EQUIPO_TEXT_1": "Somos una agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.",
     "EQUIPO_TEXT_2": "Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.",
 
-    "DEPORTE_TITLE_1": "Marketing \n Deportivo",
+    "DEPORTE_TITLE_1": "Deporte",
     "DEPORTE_TEXT_1": "Desarrollo e implementación de estrategias integrales en la industria del deporte. Ofrecemos servicios de consultoría general para marcas, jugadores, instituciones y sponsors. Desde estrategia de comunicación 360, producción de eventos y activaciones de marcas comerciales hasta el manejo de carreras deportivas.",
 
     "EVENTOS_TITLE_1": "Producción \n y Eventos",

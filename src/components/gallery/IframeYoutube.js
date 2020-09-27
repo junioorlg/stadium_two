@@ -12,6 +12,8 @@ class IframeYoutube extends Component {
             videoID: [],
             loading: true
         }
+
+        this.abortController = new AbortController();
     }
 
     componentDidMount() {
@@ -20,7 +22,7 @@ class IframeYoutube extends Component {
         const idVideo = this.props.id;
         const url = `https://www.googleapis.com/youtube/v3/videos?id=${idVideo}&key=${apiKey}&origin=http://localhost:3000`;
   
-        fetch(url)
+        fetch( url, {signal: this.abortController.signal} )
             .then(function(response) {
                 if (response.status >= 400) {
                     throw new Error("Bad response from server")
@@ -35,8 +37,12 @@ class IframeYoutube extends Component {
                 });
             })
             .catch(error => {
-                console.error(error)
+                //console.error(error)
             });
+    }
+
+    componentWillUnmount() {
+        this.abortController.abort();
     }
 
     render() {

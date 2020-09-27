@@ -3,7 +3,7 @@ import M from 'materialize-css';
 import './menu.scss';
 
 import logo  from './../../media/logo-stadium.png'
-//import logoW from './../../media/logo-stadium-w.png'
+import logoW from './../../media/logo-stadium-w.png'
 
 //Languages
 import { withTranslation } from 'react-i18next'
@@ -41,8 +41,8 @@ class Menu extends Component {
                     elm.classList.add( 'white-text' );
                 });
             },
-            onOpenEnd: () => {},
-            onCloseStart : () => {},
+            onOpenEnd: () => { this.setState({ logoStadium: logoW }) },
+            onCloseStart : () => { this.setState({ logoStadium: logo }) },
             onCloseEnd : () => {
                 const solialLink  = document.querySelectorAll('.social-link');
 

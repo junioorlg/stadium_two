@@ -34,7 +34,7 @@ class Gallery extends Component {
             inDuration: 250,
             outDuration: 250,
             opacity: 0.5,
-            dismissible: false,
+            dismissible: true,
             startingTop: "4%",
             endingTop: "10%"
         }
@@ -121,7 +121,8 @@ class Gallery extends Component {
                                                         
                                                         <div
                                                             data-id={val.id}
-                                                            className="box-preview-bg inactive" 
+                                                            className="box-preview-bg inactive"
+                                                            data-video={val.isVideo ? '1': '0'}
                                                             style={{
                                                                 backgroundImage: `url(${(val.imgSlider) || "https://dummyimage.com/100x100/000/fff"})`
                                                             }}>

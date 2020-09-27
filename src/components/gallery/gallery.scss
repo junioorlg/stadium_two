@@ -53,6 +53,7 @@
     .box-preview {
         height: 200px;
         border: 1px solid #fff;
+        cursor: pointer;
         
         .box-preview-bg {
             height: 200px;
@@ -65,6 +66,22 @@
             }
             &:hover {
                 filter: grayscale(0) !important;
+            }
+
+            &[data-video='1'] {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    left: 50%;
+                    margin-left: -30px;
+                    top: 50%;
+                    margin-top: -30px;
+                    background-image: url('../../media/play.png?v=1');
+                    background-position: center;
+                    background-size: cover;
+                }
             }
         }
     }

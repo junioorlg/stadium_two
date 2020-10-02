@@ -36,7 +36,7 @@
             text-align: center;
             margin: 40vh auto 0;
             text-transform: uppercase;
-            transition: all 1.5s;
+            transition: all 1s;
 
             a, span {
                 height: auto;
@@ -46,7 +46,7 @@
                 cursor: pointer;
                 letter-spacing: 2px;
                 margin-bottom: 5px;
-                transition: all 1.5s;
+                transition: all 1s;
                 font-family: 'GalanoGrotesqueBold';
                 
                 &:hover {
@@ -57,10 +57,10 @@
             .content-submenu {
                 max-height: 0;
                 overflow: hidden;
-                -webkit-transition: max-height 1.5s;
-                -moz-transition: max-height 1.5s;
-                -ms-transition: max-height 1.5s;
-                -o-transition: max-height 1.5s;
+                -webkit-transition: max-height 1s;
+                -moz-transition: max-height 1s;
+                -ms-transition: max-height 1s;
+                -o-transition: max-height 1s;
                 transition: max-height 1s;
                 
                 &.active {

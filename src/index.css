@@ -53,6 +53,11 @@ code {
     src: local('GalanoGrotesqueSemiBold'), url(./fonts/Galano_Grotesque_Semi_Bold.otf) format('truetype');
 }
 
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: local('MyriadProRegular'), url(./fonts/MyriadPro-Regular.otf) format('truetype');
+}
+
 @media screen and (max-width: 600px) {
     body {
         /* display: none !important;*/ 

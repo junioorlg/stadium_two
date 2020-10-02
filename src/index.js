@@ -12,6 +12,7 @@ import './fonts/Galano_Grotesque_Medium.otf';
 import './fonts/Galano_Grotesque_Bold.otf';
 import './fonts/Galano_Grotesque_Extra_Bold.otf';
 import './fonts/Galano_Grotesque_Semi_Bold.otf';
+import './fonts/MyriadPro-Regular.otf';
 
 import "../node_modules/slick-carousel/slick/slick.css"; 
 import "../node_modules/slick-carousel/slick/slick-theme.css";

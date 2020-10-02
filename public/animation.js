@@ -17975,7 +17975,7 @@ THREE.SpriteCanvasMaterial.prototype.clone = function () {
 
 THREE.CanvasRenderer = function ( parameters ) {
 
-	console.log( 'THREE.CanvasRenderer', THREE.REVISION );
+	// console.log( 'THREE.CanvasRenderer', THREE.REVISION );
 
 	parameters = parameters || {};
 
@@ -19942,8 +19942,8 @@ for(var h=b.length;c<h;c++)this.replaceStack(function(e){var f=g.nameLookup(e,b[
 					this.extraLineGeometry.vertices.push(particle.sprite.position);
 				}
 				//add line through extra particles
-				var extraLine = new THREE.Line( this.extraLineGeometry, lineMaterial );
-				 _this.scene.add( extraLine );
+				//var extraLine = new THREE.Line( this.extraLineGeometry, lineMaterial );
+				//_this.scene.add( extraLine );
 	
 				$( window ).on( 'resize', _this.onWindowResize.bind( _this ) );
 				this.$( '.feat-link' ).on( 'click', _this.navigate.bind( _this ) );

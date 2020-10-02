@@ -73,6 +73,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        overflow: auto;
+    }
     .page-subtitle{
         font-size: 1.9em;
     }

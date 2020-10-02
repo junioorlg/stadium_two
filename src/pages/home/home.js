@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import Main from './../main/main'
 import { Link } from "react-router-dom";
 
-import '../../media/esfera-stadium.png'
 import './home.scss';
-
+import '../../media/esfera-stadium.png'
 
 class Home extends Component {
 

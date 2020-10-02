@@ -41,7 +41,7 @@ class Menu extends Component {
                     elm.classList.add( 'white-text' );
                 });
             },
-            onOpenEnd: () => { this.setState({ logoStadium: logo }) },
+            onOpenEnd: () => { this.setState({ logoStadium: logoW }) },
             onCloseStart : () => { this.setState({ logoStadium: logo }) },
             onCloseEnd : () => {
                 const solialLink  = document.querySelectorAll('.social-link');

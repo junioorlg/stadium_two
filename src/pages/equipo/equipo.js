@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
-import Main from '../main/main'
+
+// CSS
 import './equipo.scss';
+
+// Components
+import Main from '../main/main'
 import BtnContacto from './../../components/btnContacto/btnContacto'
 
 //Languages

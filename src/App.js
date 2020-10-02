@@ -7,7 +7,7 @@ import {
 	Switch,
 	Route
 } from "react-router-dom"
-import { createBrowserHistory } from 'history';
+/*import { createBrowserHistory } from 'history';*/
 
 /* pages */
 import Home from './pages/home/home'
@@ -74,7 +74,7 @@ class App extends Component {
 
 export default App;
 
-
+/*
 export const history = createBrowserHistory({
     basename: process.env.PUBLIC_URL
-});
+});*/

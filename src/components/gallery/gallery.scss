@@ -88,6 +88,7 @@
 
     .modal {
         background-color: rgba(250, 250, 250, 0);
+
         .modal-content {
             padding: 0;
         }
@@ -119,6 +120,27 @@
             }
             &:after {
               transform: rotate(-45deg);
+            }
+        }
+
+        @media (min-width: 720px) {
+            &.vertical {
+                height: 90%;
+                top: 5% !important;
+                max-height: none;
+
+                .modal-content {
+                    height: 100%;
+                    text-align: center;
+                    background-color: #000;
+                    display: flex;
+                    
+                    img {
+                        width: auto;
+                        height: 100%;
+                        margin: auto auto;
+                    }
+                }
             }
         }
     }

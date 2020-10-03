@@ -109,7 +109,7 @@ class Home extends Component {
                             </div>
 
                             <div className="steve-jobs first-animation">
-                                "Connect the dots" <hr /> Steve Jobs
+                                "Connect the dots" <hr /> <b>Steve Jobs</b>
                             </div>
                             {/*<div dangerouslySetInnerHTML={htmlDoc} />*/}
                         </div>

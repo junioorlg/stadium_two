@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../main/main'
 
-import Gallery from './../../components/galleryMO/gallery'
+import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
 import BtnLanguage from './../../components/btnLanguage/btnLanguage'

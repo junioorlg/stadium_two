@@ -8,8 +8,7 @@ export const data =
 		isVideo: true,
 		idYoutube: 'CoACh--ETfE',
 		imgSlider: './media/gallery/evento/messi.jpg',
-        imgPreview: './media/gallery/evento/caratula-messi-cuadrado.jpg',
-        dimension: 'portrait'
+        imgPreview: './media/gallery/evento/caratula-messi-cuadrado.jpg'
 	},
     {
 		id: 2,
@@ -19,8 +18,7 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/abzurdah.png',
-		imgPreview: './media/gallery/evento/abzurdah.png',
-        dimension: 'portrait'
+		imgPreview: './media/gallery/evento/abzurdah.png'
     },
     {
 		id: 3,
@@ -30,8 +28,7 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/martin-liberman.jpg',
-		imgPreview: './media/gallery/evento/martin-liberman.jpg',
-        dimension: 'portrait'
+		imgPreview: './media/gallery/evento/martin-liberman.jpg'
     },
     {
 		id: 4,
@@ -41,18 +38,6 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/circodusoleil.jpg',
-		imgPreview: './media/gallery/evento/circodusoleil.jpg',
-        dimension: 'portrait'
-    },
-    {
-		id: 5,
-		name: 'Lorem ipsum',
-		anio: 2018,
-		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
-		imgSlider: './media/gallery/evento/landscape.png',
-		imgPreview: './media/gallery/evento/landscape.png',
-        dimension: 'landscape'
+		imgPreview: './media/gallery/evento/circodusoleil.jpg'
     }
 ];

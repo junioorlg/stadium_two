@@ -4,6 +4,7 @@ import Main from '../main/main'
 import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
+import BtnLanguage from './../../components/btnLanguage/btnLanguage'
 
 import './entretenimientos.scss'
 
@@ -28,6 +29,8 @@ function Entretenimientos ( props ) {
                 <div className="page-contacto">
                     <BtnContacto />
                 </div>
+
+                <BtnLanguage />
             </div>
         </Main>
     );

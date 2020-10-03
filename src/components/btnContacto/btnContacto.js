@@ -10,7 +10,7 @@ class BtnContacto extends Component {
         return (
             <div className="btn-contacto-component">
                 <div className="row">
-                    <div className="col s12">
+                    <div className="col s12 center-btn">
                         <Link to="/contacto">{ this.props.t('COMPONENTE_BTN_CONTACTO_TEXT_1') }</Link>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ function BtnLanguage ( props ) {
     return (
         <div className="container-btnlanguage">
             <div className="row">
-                <div className="col m12 center-align">
+                <div className="col s12 center-align">
                     <span className="lang-selector" onClick={()=>handleClick('en')}>EN</span> / 
                     <span className="lang-selector" onClick={()=>handleClick('es')}> ES</span>
                 </div>

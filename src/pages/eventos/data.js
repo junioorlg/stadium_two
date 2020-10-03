@@ -18,7 +18,8 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/abzurdah.png',
-		imgPreview: './media/gallery/evento/abzurdah.png'
+		imgPreview: './media/gallery/evento/abzurdah.png',
+		dimension: 'vertical'
     },
     {
 		id: 3,
@@ -28,7 +29,8 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/martin-liberman.jpg',
-		imgPreview: './media/gallery/evento/martin-liberman.jpg'
+		imgPreview: './media/gallery/evento/martin-liberman.jpg',
+		dimension: 'vertical'
     },
     {
 		id: 4,
@@ -38,6 +40,7 @@ export const data =
 		isVideo: false,
 		idYoutube: '',
 		imgSlider: './media/gallery/evento/circodusoleil.jpg',
-		imgPreview: './media/gallery/evento/circodusoleil.jpg'
-    },
+		imgPreview: './media/gallery/evento/circodusoleil.jpg',
+		dimension: 'vertical'
+    }
 ];

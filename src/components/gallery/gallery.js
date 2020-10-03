@@ -22,7 +22,8 @@ class Gallery extends Component {
             imgPreview: firstSlider.imgPreview,
             idYoutube: firstSlider.idYoutube,
             isVideo: firstSlider.isVideo,
-            isCloseModal: true
+            isCloseModal: true,
+            dimension: firstSlider.dimension
         }
     }
     
@@ -55,6 +56,7 @@ class Gallery extends Component {
             imgPreview: slider.imgPreview,
             idYoutube: slider.idYoutube,
             isVideo: slider.isVideo,
+            dimension: slider.dimension
         })
 
         for (let i = 0; i < sliders.length; i++)
@@ -73,7 +75,8 @@ class Gallery extends Component {
             imgPreview, 
             idYoutube, 
             isVideo,
-            isCloseModal
+            isCloseModal,
+            dimension
         } = this.state
 
         const cantElms = this.props.data.length
@@ -102,6 +105,8 @@ class Gallery extends Component {
               }
             ]
         }
+
+        const classModal = isVideo ? '' : dimension;
 
         return (
             <div className="gallery-component">
@@ -140,7 +145,7 @@ class Gallery extends Component {
 
                 <div
                     id="modal1"
-                    className="modal"
+                    className={'modal ' + classModal}
                     ref={
                         Modal => { this.Modal = Modal }
                     }>

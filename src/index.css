@@ -25,7 +25,7 @@ code {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+	background: url(/media/Preloader_11.gif) center no-repeat #fff;
 }
 
 @font-face {
@@ -51,6 +51,11 @@ code {
 @font-face {
     font-family: 'GalanoGrotesqueSemiBold';
     src: local('GalanoGrotesqueSemiBold'), url(./fonts/Galano_Grotesque_Semi_Bold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: local('MyriadProRegular'), url(./fonts/MyriadPro-Regular.otf) format('truetype');
 }
 
 @media screen and (max-width: 600px) {

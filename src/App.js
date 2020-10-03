@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+
+// CSS
 import './App.scss'
 
-/* router MemoryRouter | HashRouter*/
+// Router
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -9,21 +11,27 @@ import {
 } from "react-router-dom"
 /*import { createBrowserHistory } from 'history';*/
 
-/* pages */
+// Pages
 import Home from './pages/home/home'
 import Contacto from './pages/contacto/contacto'
 import Equipo from './pages/equipo/equipo'
-import Estrategias from './pages/estrategias/estrategias'
 import Page404 from './pages/page404/page404'
 
-/* internals */
+// Internals
+import Estrategias from './pages/estrategias/estrategias'
 import Entretenimientos from './pages/entretenimientos/entretenimientos'
 import Eventos from './pages/eventos/eventos'
 import Deportivo from './pages/deportivo/deportivo'
 import Medios from './pages/medios/medios'
 
+// Helpers
+import { initAllImage } from './helper'
+
 class App extends Component {
 	render() {
+		
+		initAllImage()
+
 		return (
 			<div className="stadium">
 				<Router>

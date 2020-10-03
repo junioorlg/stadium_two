@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import Main from './../main/main'
 import { Link } from "react-router-dom";
 
-import '../../media/esfera-stadium.png'
 import './home.scss';
-
+import '../../media/esfera-stadium.png'
 
 class Home extends Component {
 
     componentDidMount () {
+        const w = window.innerWidth
+
         const contentAnimation = document.querySelector('.content-animation');
         const circle           = document.querySelector('.circle');
         const circleShadow     = document.querySelector('.circle-shadow');
         const script           = document.createElement("script");
+        const nodos            = document.querySelectorAll('.nodo');
+        const firstAnimation   = document.querySelectorAll('.first-animation');
 
         contentAnimation.onmouseenter = () => {
             circle.style.animationPlayState = 'paused';
@@ -35,8 +38,18 @@ class Home extends Component {
         
         script.src = "./animation.js";
         script.async = true;
-        
+
         document.body.appendChild(script);
+        
+        if ( w > 600 ) {
+            nodos.forEach( nodo => {
+                nodo.addEventListener("mouseover", () => {
+                    firstAnimation.forEach( elm => {
+                        elm.classList.remove('first-animation')
+                    })
+                });
+            })
+        }
     }
 
     render() {
@@ -58,7 +71,7 @@ class Home extends Component {
                                     <div className="content-nodos">
                                         <div className="nodos">
                                             <Link to="/deportes">
-                                                <div className="nodo"  data-number="1"></div>
+                                                <div className="nodo first-animation"  data-number="1"></div>
                                                 <div className="label" data-number="1">Deporte</div>
                                             </Link>
 
@@ -93,6 +106,10 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="circle-shadow"></div>
+                            </div>
+
+                            <div className="steve-jobs first-animation">
+                                "Connect the dots" <hr /> Steve Jobs
                             </div>
                             {/*<div dangerouslySetInnerHTML={htmlDoc} />*/}
                         </div>

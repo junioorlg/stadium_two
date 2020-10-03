@@ -10,6 +10,8 @@
 
 @media only screen and (max-width: 600px) {
     .container-btnlanguage {
+        position: relative;
         display:  block;
+        bottom: auto;
     }
 }

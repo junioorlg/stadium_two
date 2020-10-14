@@ -13,7 +13,8 @@ function Contacto ( props ) {
 
     function sendEmail(e){
         e.preventDefault();
-        emailjs.sendForm('gmail', 'contact_form', e.target, 'user_2BwfI4UY5qeGSpG7jkPPg')
+
+        emailjs.sendForm('service_ytfmlbg', 'contact_form', e.target, 'user_L7EgByDPkMoybZIIFpiDM')
         .then((result) => {
             console.log(result.text);
             M.toast({html: t('CONTACTO_MESSAGE_SENT')})

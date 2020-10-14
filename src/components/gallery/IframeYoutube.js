@@ -18,9 +18,9 @@ class IframeYoutube extends Component {
 
     componentDidMount() {
         const that = this;
-        const apiKey = "AIzaSyDV7i60KkEPEi3jH1TPIhNwxa5rnUuEhpw";
+        const apiKey = "AIzaSyBOg5gD9xpd-lXfA9lW95Ltl0TWJbpbN58";
         const idVideo = this.props.id;
-        const url = `https://www.googleapis.com/youtube/v3/videos?id=${idVideo}&key=${apiKey}&origin=http://localhost:3000`;
+        const url = `https://www.googleapis.com/youtube/v3/videos?id=${idVideo}&key=${apiKey}`;
   
         fetch( url, {signal: this.abortController.signal} )
             .then(function(response) {

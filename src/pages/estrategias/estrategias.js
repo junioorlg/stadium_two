@@ -37,7 +37,7 @@ function Estrategias ( props ) {
                         </ul>
                     </div>
                     <div className="col s12 m6">
-                        <img src="/media/gallery/estrategias/strategy.png" title="strategy stadium" alt="strategy stadium" className="responsive-img" />
+                        <img src="/media/gallery/estrategias/new_strategy_mob.png" title="strategy stadium" alt="strategy stadium" className="responsive-img" />
                     </div>
                 </div>
                     

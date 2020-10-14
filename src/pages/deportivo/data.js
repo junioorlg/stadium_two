@@ -7,7 +7,7 @@ export const data =
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
 		isVideo: true,
 		idYoutube: 'Eprbje4FjJs',
-		imgSlider: './media/gallery/deportivo/ypf.jpg',
+		imgSlider: './media/gallery/deportivo/ypf_caratula.png',
 		imgPreview: ''
 	},
 	{

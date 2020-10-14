@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import './home.scss';
 import '../../media/esfera-stadium.png'
 
+//Languages
+import { withTranslation } from 'react-i18next'
+
 class Home extends Component {
 
     componentDidMount () {
@@ -72,27 +75,27 @@ class Home extends Component {
                                         <div className="nodos">
                                             <Link to="/deportes">
                                                 <div className="nodo first-animation"  data-number="1"></div>
-                                                <div className="label" data-number="1">Deporte</div>
+                                                <div className="label" data-number="1">{ this.props.t('Deporte') }</div>
                                             </Link>
 
                                             <Link to="/eventos">
                                                 <div className="nodo"  data-number="2"></div>
-                                                <div className="label" data-number="2">Eventos</div>
+                                                <div className="label" data-number="2">{ this.props.t('Eventos') }</div>
                                             </Link>
 
                                             <Link to="/estrategias">
                                                 <div className="nodo"  data-number="3"></div>
-                                                <div className="label" data-number="3">Producciones</div>
+                                                <div className="label" data-number="3">{ this.props.t('Estrategias') }</div>
                                                 </Link>
 
                                             <Link to="/medios">
                                                 <div className="nodo"  data-number="4"></div>
-                                                <div className="label" data-number="4">Gestión de medios</div>
+                                                <div className="label" data-number="4">{ this.props.t('Gestion_medios') }</div>
                                             </Link>
 
                                             <Link to="/entretenimientos">
                                                 <div className="nodo"  data-number="5"></div>
-                                                <div className="label" data-number="5">Entretenimiento</div>
+                                                <div className="label" data-number="5">{ this.props.t('Entretenimiento') }</div>
                                             </Link>
                                         </div>
 
@@ -120,4 +123,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withTranslation()( Home );

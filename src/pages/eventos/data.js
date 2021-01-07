@@ -5,8 +5,8 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: true,
-		idYoutube: 'CoACh--ETfE',
+		isVideo: false,
+		idYoutube: '',
 		imgSlider: './media/gallery/evento/messi.jpg',
         imgPreview: './media/gallery/evento/caratula-messi-cuadrado.jpg'
 	},
@@ -37,10 +37,9 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
+		isVideo: true,
+		idYoutube: 'Oi4LaCPcKMY',
 		imgSlider: './media/gallery/evento/circodusoleil.jpg',
-		imgPreview: './media/gallery/evento/circodusoleil.jpg',
-		dimension: 'vertical'
+		imgPreview: ''
     }
 ];

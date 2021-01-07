@@ -2,16 +2,6 @@ export const data =
 [
 	{
 		id: 1,
-		name: 'Lorem ipsum',
-		anio: 2018,
-		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: true,
-		idYoutube: 'Eprbje4FjJs',
-		imgSlider: './media/gallery/deportivo/ypf_caratula.png',
-		imgPreview: ''
-	},
-	{
-		id: 2,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
@@ -20,6 +10,17 @@ export const data =
 		imgSlider: './media/gallery/deportivo/RRSSstories.jpg',
 		imgPreview: ''
     },
+	{
+		id: 2,
+		name: 'Lorem ipsum',
+		anio: 2018,
+		description: 'Lorem ipsum amet, consectetur adipisicing.',
+		isVideo: true,
+		idYoutube: 'Eprbje4FjJs',
+		imgSlider: './media/gallery/deportivo/stadium.jpg',
+		imgPreview: '',
+		fullColor: true
+	},
     {
 		id: 3,
 		name: 'Lorem ipsum',

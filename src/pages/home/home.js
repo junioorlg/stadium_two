@@ -83,19 +83,24 @@ class Home extends Component {
                                                 <div className="label" data-number="2">{ this.props.t('Eventos') }</div>
                                             </Link>
 
-                                            <Link to="/estrategias">
+                                            <Link to="/medios">
                                                 <div className="nodo"  data-number="3"></div>
-                                                <div className="label" data-number="3">{ this.props.t('Estrategias') }</div>
+                                                <div className="label" data-number="3">{ this.props.t('Gestion_medios') }</div>
                                                 </Link>
 
-                                            <Link to="/medios">
+                                            <Link to="/entretenimientos">
                                                 <div className="nodo"  data-number="4"></div>
-                                                <div className="label" data-number="4">{ this.props.t('Gestion_medios') }</div>
+                                                <div className="label" data-number="4">{ this.props.t('Entretenimiento') }</div>
                                             </Link>
 
-                                            <Link to="/entretenimientos">
+                                            <Link to="/estrategias">
                                                 <div className="nodo"  data-number="5"></div>
-                                                <div className="label" data-number="5">{ this.props.t('Entretenimiento') }</div>
+                                                <div className="label" data-number="5">{ this.props.t('Estrategias') }</div>
+                                            </Link>
+
+                                            <Link to="/esports">
+                                                <div className="nodo"  data-number="6"></div>
+                                                <div className="label" data-number="6">{ this.props.t('Esport') }</div>
                                             </Link>
                                         </div>
 
@@ -105,6 +110,7 @@ class Home extends Component {
                                             <div className="line" data-number="3"></div>
                                             <div className="line" data-number="4"></div>
                                             <div className="line" data-number="5"></div>
+                                            <div className="line" data-number="6"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +118,7 @@ class Home extends Component {
                             </div>
 
                             <div className="steve-jobs first-animation">
-                                "Connect the dots" <hr /> <b>Steve Jobs</b>
+                                <b>30 años</b> <hr />
                             </div>
                             {/*<div dangerouslySetInnerHTML={htmlDoc} />*/}
                         </div>

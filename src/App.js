@@ -22,6 +22,7 @@ import Estrategias from './pages/estrategias/estrategias'
 import Entretenimientos from './pages/entretenimientos/entretenimientos'
 import Eventos from './pages/eventos/eventos'
 import Deportivo from './pages/deportivo/deportivo'
+import Esports from './pages/esports/esports'
 import Medios from './pages/medios/medios'
 
 // Helpers
@@ -55,6 +56,10 @@ class App extends Component {
 
                         <Route exact path="/eventos">
 							<Eventos />
+						</Route>
+
+                        <Route exact path="/esports">
+							<Esports />
 						</Route>
 
                         <Route exact path="/deportes">

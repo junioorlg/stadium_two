@@ -32,6 +32,8 @@ const Equipo = () => {
                             <p className="equipo-about">{ t('EQUIPO_TEXT_1') }</p>
                             <br />
                             <p className="equipo-about">{ t('EQUIPO_TEXT_2') }</p>
+                            <br />
+                            <p className="equipo-about">{ t('EQUIPO_TEXT_3') }</p>
                         </div>
                     </div>
                 </div>

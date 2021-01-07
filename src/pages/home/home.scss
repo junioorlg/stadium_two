@@ -84,7 +84,7 @@
                         }
                     
                         &[data-number="2"] {
-                            left: 45%; top: 99.5%;
+                            left: 45%; top: 105%;
                         }
                     
                         &[data-number="3"] {
@@ -97,6 +97,10 @@
                     
                         &[data-number="5"] {
                             left: 55%; top: -0.3%;
+                        }
+                    
+                        &[data-number="6"] {
+                            left: 6%; top: 6%;
                         }
                     }
                 }
@@ -125,7 +129,7 @@
     .steve-jobs {
         position: fixed;
         bottom: 80px;
-        left: 100px;
+        left: 130px;
         font-family: 'MyriadProRegular';
         font-size: 1.5em;
         transition: all 2s;
@@ -179,23 +183,27 @@
     }
 
     .content-nodos .label[data-number="1"] {
-        top: 47%; left: -15%;
+        top: 52%; left: -12%;
     }
 
     .content-nodos .label[data-number="2"] {
-        top: 100%; right: 59%;
+        top: 102%; right: 59%;
     }
 
     .content-nodos .label[data-number="3"] {
-        top: 65%; left: 100%;
+        top: 64%; left: 99%;
     }
 
     .content-nodos .label[data-number="4"] {
-        top: 17%; left: 92%;
+        top: 16%; left: 91%;
     }
 
     .content-nodos .label[data-number="5"] {
-        top: -5%; left: 32%;
+        top: -5%; left: 27%;
+    }
+
+    .content-nodos .label[data-number="6"] {
+        top: 9%; left: -5%;
     }
 
 
@@ -208,24 +216,24 @@
     }
 
     .content-nodos .lines .line[data-number="1"] {
-        width: 74%;
-        transform: rotate(139deg);
-        top: 24.5%;
-        left: -9%;  
+        width: 50%;
+        transform: rotate(173deg);
+        top: 3.5%;
+        left: 6.3%;
     }
 
     .content-nodos .lines .line[data-number="2"] {
-        width: 68%;
-        transform: rotate(48deg);
-        top: 74%;
-        left: -11%;
+        width: 74%;
+        transform: rotate(51deg);
+        top: 77.4%;
+        left: -14%;
     }
 
     .content-nodos .lines .line[data-number="3"] {
-        width: 57%;
-        transform: rotate(149deg);
-        top: 85.4%;
-        left: 42%;
+        width: 62%;
+        transform: rotate(145deg);
+        top: 87.9%;
+        left: 40%;
     }
 
     .content-nodos .lines .line[data-number="4"] {
@@ -240,6 +248,13 @@
         transform: rotate(27deg);
         top: 8%;
         left: 53%;
+    }
+
+    .content-nodos .lines .line[data-number="6"] {
+        width: 44%;
+        transform: rotate(99deg);
+        top: 28%;
+        left: -18.5%;
     }
 
     .animate-fade {
@@ -265,18 +280,20 @@
                             transform: scale(1.3);
 
                             &[data-number="1"] { left: -1.2% }
-                            &[data-number="2"] { top: 98.8% }
+                            &[data-number="2"] { top: 103% }
                             &[data-number="3"] { left: 94% }
+                            &[data-number="6"] { left: 7%; top: 7% }
                         }
                     }
                 }
 
                 .label {
-                    &[data-number="1"] { top: 38%; left: -18%; }
+                    &[data-number="1"] { top: 38%; left: -20%; }
                     &[data-number="2"] { right: 60%; }
-                    &[data-number="3"] { top: 77%; left: 97%; }
+                    &[data-number="3"] { top: 77%; left: 92%; }
                     &[data-number="4"] { top: 6%; left: 90%; }
-                    &[data-number="5"] { top: -7%; left: 19%; }
+                    &[data-number="5"] { top: -7%; left: 7%; }
+                    &[data-number="6"] { top: 12%; left: -11%; }
                 }
             }
 
@@ -285,9 +302,11 @@
                 height: 12px;
             }
         }
-        
 
-        .home .content-nodos .lines .line[data-number="1"] { top: 25.5%; }
+        .home .content-nodos .lines .line[data-number="1"] { transform: rotate(171deg); top: 4%; left: 8%; }
+        .home .content-nodos .lines .line[data-number="2"] { transform: rotate(49deg); }
+        .home .content-nodos .lines .line[data-number="3"] { width: 60%; left: 41%; transform: rotate(146deg); }
+        .home .content-nodos .lines .line[data-number="6"] { transform: rotate(101deg); left: -16.5%; width: 42%; }
     }
 
     @media only screen and (max-width: 500px) {
@@ -307,7 +326,6 @@
                             &.first-animation { transform: scale(1.3); }
 
                             &[data-number="1"] { left: -1.5% }
-                            &[data-number="2"] { top: 98% }
                             &[data-number="3"] { left: 94% }
                             &[data-number="5"] { top: -0.5% }
                         }
@@ -318,10 +336,12 @@
                     opacity: 1;
                     font-size: 9px;
 
-                    &[data-number="1"] { top: 42%; left: -16%; }
+                    &[data-number="1"] { top: 51%; left: -17%; }
+                    &[data-number="2"] { top: 101%; right: 57%; }
                     &[data-number="3"] { top: 75%; left: 95%; }
                     &[data-number="4"] { top: 8%; left: 84%; }
-                    &[data-number="5"] { top: -6.5%; left: 27%; }
+                    &[data-number="5"] { top: -6.5%; left: 18%; }
+                    &[data-number="6"] { top: 9%; left: -8%; }
                 }
             }
 

@@ -23,7 +23,8 @@ class Gallery extends Component {
             idYoutube: firstSlider.idYoutube,
             isVideo: firstSlider.isVideo,
             isCloseModal: true,
-            dimension: firstSlider.dimension
+            dimension: firstSlider.dimension,
+            fullColor: firstSlider.fullColor
         }
     }
     
@@ -56,7 +57,8 @@ class Gallery extends Component {
             imgPreview: slider.imgPreview,
             idYoutube: slider.idYoutube,
             isVideo: slider.isVideo,
-            dimension: slider.dimension
+            dimension: slider.dimension,
+            fullColor: slider.fullColor
         })
 
         for (let i = 0; i < sliders.length; i++)
@@ -66,9 +68,7 @@ class Gallery extends Component {
     }
 
     render() {
-        const { 
-            data
-         } = this.props
+        const { data } = this.props
 
         const { 
             name,
@@ -76,7 +76,8 @@ class Gallery extends Component {
             idYoutube, 
             isVideo,
             isCloseModal,
-            dimension
+            dimension,
+            fullColor
         } = this.state
 
         const cantElms = this.props.data.length
@@ -115,19 +116,21 @@ class Gallery extends Component {
                         <div className="col s12">
                             <Slider {...settingsSlider}>
                                 {
-                                    data.map((val, i) => {
+                                    data.map(( val, i ) => {
+                                        const classBox = val.fullColor ? 'box-preview-bg' : 'box-preview-bg inactive'
+
                                         return (
                                             <div className="col s12" key={i}>
                                                 <div className="col s12">
                                                     <div
                                                         className="box-preview  modal-trigger" 
                                                         href="#modal1"
-                                                        onClick={this.handleChangeElementGallery}>
+                                                        onClick={ this.handleChangeElementGallery }
+                                                        data-video={ val.isVideo ? '1': '0' } >
                                                         
                                                         <div
-                                                            data-id={val.id}
-                                                            className="box-preview-bg inactive"
-                                                            data-video={val.isVideo ? '1': '0'}
+                                                            data-id={ val.id }
+                                                            className={ classBox }
                                                             style={{
                                                                 backgroundImage: `url(${(val.imgSlider) || "https://dummyimage.com/100x100/000/fff"})`
                                                             }}>

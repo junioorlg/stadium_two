@@ -86,6 +86,7 @@ class Menu extends Component {
                             
                             <ul className="content-submenu">
                                 <li className="link-submenu"><Link to="/deportes">{ this.props.t('Deporte') }</Link></li>
+                                <li className="link-submenu"><Link to="/esports">{ this.props.t('Esport') }</Link></li>
                                 <li className="link-submenu"><Link to="/eventos">{ this.props.t('Eventos') }</Link></li>
                                 <li className="link-submenu"><Link to="/estrategias">{ this.props.t('Estrategias') }</Link></li>
                                 <li className="link-submenu"><Link to="/medios">{ this.props.t('Gestion_medios') }</Link></li>

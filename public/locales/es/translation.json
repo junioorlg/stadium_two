@@ -8,16 +8,21 @@
     "ENVIAR": "ENVIAR",
     "CONTACTO_MESSAGE_SENT": "Mensaje enviado!",
 
-    "Deporte": "Deporte",
-    "Eventos": "Producción y eventos",
-    "Estrategias": "Research y estrategia",
-    "Gestion_medios": "Gestión de medios",
+    "Deporte": "ST Sports",
+    "Esport": "E Sports",
+    "Eventos": "ST Eventos",
+    "Estrategias": "Research y Estrategia",
+    "Gestion_medios": "ST Medios",
     "Entretenimiento": "Entretenimiento",
 
-    "EQUIPO_TEXT_1": "Somos una agencia integral de comunicación con más de 20 años en el mercado local y regional. Brindamos soluciones de estrategia, creatividad, gestión de contenidos en medios para diversas industrias y referentes de opinión.",
-    "EQUIPO_TEXT_2": "Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.",
+    "EQUIPO_TEXT_1": "Somos una empresa integral de negocios en la industria de la comunicación con más de 30 años en el mercado local y regional.",
+    "EQUIPO_TEXT_2": "Hemos desarrollado un conjunto de empresas para brindar soluciones específicas de gestión de medios, producciones integrales de espectáculos y eventos, creación de contenido multimedia, research y estrategia y marketing deportivo.",
+    "EQUIPO_TEXT_3": "Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.",
+    
+    "ESPORT_TITLE_1": "E Sports",
+    "ESPORT_TEXT_1": "Elaboramos una nueva organización de E Sports Latam. Toda organización tiene un líder: Juan Sebastián Verón. \n Creamos contenido de valor que se desarrolla y se transforma en una plataforma de generación y distribución de contenidos digitales.",
 
-    "DEPORTE_TITLE_1": "Deporte",
+    "DEPORTE_TITLE_1": "Marketing Deportivo",
     "DEPORTE_TEXT_1": "Desarrollo e implementación de estrategias integrales en la industria del deporte. Ofrecemos servicios de consultoría general para marcas, jugadores, instituciones y sponsors. Desde estrategia de comunicación 360, producción de eventos y activaciones de marcas comerciales hasta el manejo de carreras deportivas.",
 
     "EVENTOS_TITLE_1": "Producción \n y Eventos",
@@ -33,7 +38,7 @@
     "ESTRATEGIA_ITEM_6": "6.FIDELIZAR / Territorio",
     "ESTRATEGIA_ITEM_7": "7.EVOLUCIONAR / Monitoreo y Control",
 
-    "MEDIOS_TITLE_1": "Gestión \n de Medios",
+    "MEDIOS_TITLE_1": "Gestión y \n comercialización de medios",
     "MEDIOS_TEXT_1": "Nos especializamos en la compra de medios y la producción de soluciones e ideas integrales aplicables en social media. Desarrollamos el diseño, la edición y la estrategia de comunicación de tus proyectos. Optimizamos e implementamos las campañas de marketing con influencers para generar mayor impacto mediático.",
 
     "ENTRETENIMIENTO_TITLE_1": "Entretenimiento",

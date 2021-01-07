@@ -8,14 +8,19 @@
     "ENVIAR": "SEND",
     "CONTACTO_MESSAGE_SENT": "Message was sent!",
 
-    "Deporte": "Sports",
-    "Eventos": "Events",
+    "Deporte": "ST Sports",
+    "Esport": "E Sports",
+    "Eventos": "ST Events",
     "Estrategias": "Strategy",
-    "Gestion_medios": "Media Management",
+    "Gestion_medios": "ST Medios",
     "Entretenimiento": "Entertainment",
 
-    "EQUIPO_TEXT_1": "We are a full-service communications agency with more than 20 years in the local and regional market. We provide strategy, creativity and media content management solutions for various industries and opinion makers.",
-    "EQUIPO_TEXT_2": "On-going innovation in our work result in effectiveness and businesses which ratify our relationship with clients year after year.",
+    "EQUIPO_TEXT_1": "We are full-service communication and media company with more than 30 years in the local and regional market.",
+    "EQUIPO_TEXT_2": "We have developed a group of companies to provide specific solutions for media management, integral productions of shows and events, creation of multimedia content, research and strategy, and sports marketing.",
+    "EQUIPO_TEXT_3": "Constant innovation in our executions results in effectiveness and new businesses that validate our link with clients year after year.",
+    
+    "ESPORT_TITLE_1": "E Sports",
+    "ESPORT_TEXT_1": "We created a new organization for E Sports in Latam. Every organization has its leader: Juan Sebastián Verón. \n We create valuable content that develops and transforms into a platform that generates and distributes digital content.",
     
     "DEPORTE_TITLE_1": "Sports",
     "DEPORTE_TEXT_1": "Development and implementation of comprehensive strategies in the sports industry. We offer general advisory services for brands, players, institutions and sponsors, which run the gamut from 360 communications strategy, event production and commercial brand activation to the management of sport careers.",
@@ -23,7 +28,7 @@
     "EVENTOS_TITLE_1": "Events",
     "EVENTOS_TEXT_1": "We are a producer that specializes in generating audiovisual content of all kinds, from movies, TV programs and documentaries to radio programs. We offer full services for the development of sports, commercial and/or institutional events: audiovisual production and implementation, communication campaigns, press management, Public Relations, live coverage and streaming.",
 
-    "ESTRATEGIA_TITLE_1": "Strategy",
+    "ESTRATEGIA_TITLE_1": "Research \n and Strategy",
     "ESTRATEGIA_TEXT_1": "Strategy and execution aimed at election processes and organization management. Our methodology is built as follows:",
     "ESTRATEGIA_ITEM_1": "1.LISTEN / Digital surveys",
     "ESTRATEGIA_ITEM_2": "2.DEVELOP / Strategy and Planning",

@@ -20,5 +20,14 @@ export const data =
 		imgSlider: './media/gallery/medios/PokerStars.jpg',
 		imgPreview: ''
 	},
-	
+	{
+		id: 2,
+		name: 'Radio: Oral Deportiva',
+		anio: 2017,
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+		isVideo: true,
+		idYoutube: 'jivZcJmdfgk',
+		imgSlider: './media/gallery/medios/pbestatica.jpg',
+		imgPreview: ''
+	},
 ];

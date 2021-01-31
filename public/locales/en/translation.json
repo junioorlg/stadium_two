@@ -10,17 +10,17 @@
 
     "Deporte": "ST Sports",
     "Esport": "E Sports",
-    "Eventos": "ST Events",
+    "Eventos": "Events",
     "Estrategias": "Strategy",
-    "Gestion_medios": "ST Medios",
-    "Entretenimiento": "Entertainment",
+    "Gestion_medios": "ST Media",
+    "Entretenimiento": "Social Media",
 
     "EQUIPO_TEXT_1": "We are full-service communication and media company with more than 30 years in the local and regional market.",
     "EQUIPO_TEXT_2": "We have developed a group of companies to provide specific solutions for media management, integral productions of shows and events, creation of multimedia content, research and strategy, and sports marketing.",
     "EQUIPO_TEXT_3": "Constant innovation in our executions results in effectiveness and new businesses that validate our link with clients year after year.",
     
     "ESPORT_TITLE_1": "E Sports",
-    "ESPORT_TEXT_1": "We created a new organization for E Sports in Latam. Every organization has its leader: Juan Sebastián Verón. \n We create valuable content that develops and transforms into a platform that generates and distributes digital content.",
+    "ESPORT_TEXT_1": "In a new and challenging environment like E Sports, we have created a new concept and launched a new digital sports organization together with a person recognized for his management skills, Juan Sebastian Veron. \n \n eBRO is an E Sports platform that covers the competition itself, as well as the creation and distribution of content for the gamer community in Latin America.",
     
     "DEPORTE_TITLE_1": "Sports",
     "DEPORTE_TEXT_1": "Development and implementation of comprehensive strategies in the sports industry. We offer general advisory services for brands, players, institutions and sponsors, which run the gamut from 360 communications strategy, event production and commercial brand activation to the management of sport careers.",
@@ -41,7 +41,7 @@
     "MEDIOS_TITLE_1": "Media \n Management",
     "MEDIOS_TEXT_1": "We are a comprehensive communications agency specializing in the purchase of media, production of ideas, social media, design and editing, optimization and influencers.",
 
-    "ENTRETENIMIENTO_TITLE_1": "Entertainment",
+    "ENTRETENIMIENTO_TITLE_1": "Social Media",
     "ENTRETENIMIENTO_TEXT_1": "We generate content for all platforms. We specialize in actions on social media and content with influencers. Our marketing team adds a new space, giving opportunities to new talents and to talents that are already known to take advantage of the audiovisual platforms provided by the digital environment to interact with the consumer public. We develop the communication and management of digital content, generating a new source of exposure for talents to monetize their impact potential.",
 
     "PAGE404_TEXT_1": "Oops! Page not found",

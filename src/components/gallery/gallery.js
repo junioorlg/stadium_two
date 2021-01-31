@@ -68,7 +68,7 @@ class Gallery extends Component {
     }
 
     render() {
-        const { data } = this.props
+        const { data, toShow } = this.props
 
         const { 
             name,
@@ -82,7 +82,9 @@ class Gallery extends Component {
 
         const cantElms = this.props.data.length
 
-        const cantSlideToShow = cantElms > 3 ? 4 : (cantElms > 2 ? 3 : 2);
+        let cantSlideToShow = cantElms > 3 ? 4 : (cantElms > 2 ? 3 : 2);
+
+        cantSlideToShow = typeof toShow !== 'undefined' && toShow ? parseInt(toShow) : cantSlideToShow;
 
         const settingsSlider = {
             dots: false,

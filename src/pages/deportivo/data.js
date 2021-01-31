@@ -15,11 +15,12 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: true,
-		idYoutube: 'Eprbje4FjJs',
+		isVideo: false,
+		idYoutube: '',
 		imgSlider: './media/gallery/deportivo/stadium.jpg',
-		imgPreview: '',
-		fullColor: true
+		imgPreview: './media/gallery/deportivo/stadium.jpg',
+		fullColor: true,
+		dimension: 'vertical'
 	},
     {
 		id: 3,

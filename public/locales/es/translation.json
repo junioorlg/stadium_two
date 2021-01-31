@@ -10,23 +10,23 @@
 
     "Deporte": "ST Sports",
     "Esport": "E Sports",
-    "Eventos": "ST Eventos",
+    "Eventos": "Producción y Eventos",
     "Estrategias": "Research y Estrategia",
     "Gestion_medios": "ST Medios",
-    "Entretenimiento": "Entretenimiento",
+    "Entretenimiento": "Social Media",
 
     "EQUIPO_TEXT_1": "Somos una empresa integral de negocios en la industria de la comunicación con más de 30 años en el mercado local y regional.",
     "EQUIPO_TEXT_2": "Hemos desarrollado un conjunto de empresas para brindar soluciones específicas de gestión de medios, producciones integrales de espectáculos y eventos, creación de contenido multimedia, research y estrategia y marketing deportivo.",
     "EQUIPO_TEXT_3": "Innovación constante en nuestras ejecuciones traen como resultado efectividad y negocios que convalidan año tras año nuestro vínculo con los clientes.",
     
     "ESPORT_TITLE_1": "E Sports",
-    "ESPORT_TEXT_1": "Elaboramos una nueva organización de E Sports Latam. Toda organización tiene un líder: Juan Sebastián Verón. \n Creamos contenido de valor que se desarrolla y se transforma en una plataforma de generación y distribución de contenidos digitales.",
+    "ESPORT_TEXT_1": "En un entorno nuevo y desafiante como los E Sports, hemos creado un nuevo concepto y lanzado una nueva organización de deportes digitales junto a una persona reconocida por su capacidad de gestión, Juan Sebastián Verón.  \n  \n eBRO es una plataforma de E Sports que abarca la competencia en sí misma, además de la creación y distribución de contenidos para la comunidad gamer de Latam.",
 
     "DEPORTE_TITLE_1": "Marketing Deportivo",
     "DEPORTE_TEXT_1": "Desarrollo e implementación de estrategias integrales en la industria del deporte. Ofrecemos servicios de consultoría general para marcas, jugadores, instituciones y sponsors. Desde estrategia de comunicación 360, producción de eventos y activaciones de marcas comerciales hasta el manejo de carreras deportivas.",
 
     "EVENTOS_TITLE_1": "Producción \n y Eventos",
-    "EVENTOS_TEXT_1": "Somos un productora especializada en generar contenido audiovisual en todos sus aspectos. Películas, programas de TV, documentales, y programas de radio. Desarrollamos eventos deportivos , comerciales e internacionales. Nos encargamos de la producción e implementación audiovisual campañas de comunicación, gestion de prensa, RRSS, la cobertura en vivo y streaming.",
+    "EVENTOS_TEXT_1": "Somos un productora especializada en generar contenido audiovisual en todos sus aspectos. Películas, programas de TV, documentales, y programas de radio. Desarrollamos eventos deportivos, comerciales e internacionales. Nos encargamos de la producción e implementación audiovisual de campañas de comunicación, gestión de prensa, RRSS, la cobertura en vivo y streaming.",
 
     "ESTRATEGIA_TITLE_1": "Research \n y Estrategia",
     "ESTRATEGIA_TEXT_1": "Estrategia y ejecución orientados a procesos electorales, y gestión de organismos. Nuestra metodología se contruye así:",
@@ -41,7 +41,7 @@
     "MEDIOS_TITLE_1": "Gestión y \n comercialización de medios",
     "MEDIOS_TEXT_1": "Nos especializamos en la compra de medios y la producción de soluciones e ideas integrales aplicables en social media. Desarrollamos el diseño, la edición y la estrategia de comunicación de tus proyectos. Optimizamos e implementamos las campañas de marketing con influencers para generar mayor impacto mediático.",
 
-    "ENTRETENIMIENTO_TITLE_1": "Entretenimiento",
+    "ENTRETENIMIENTO_TITLE_1": "Social Media",
     "ENTRETENIMIENTO_TEXT_1": "Nos especializamos en la ejecución de acciones en social media y contenido con influencers en todas las plataformas. Nuestro equipo de marketing le da un especio a talentos nuevos o conocidos para que saquen provecho de los espacios audiovisuales e interactuen con el público. Desarrollamos y administramos contenidos, generadno fuentes de exposición para que moneticen su potencial.",
 
     "PAGE404_TEXT_1": "Oops! Page not found",

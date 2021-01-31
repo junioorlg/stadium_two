@@ -5,6 +5,7 @@ import Gallery from './../../components/gallery/gallery'
 import Internal from './../../components/internal/internal'
 import BtnContacto from './../../components/btnContacto/btnContacto'
 import BtnLanguage from './../../components/btnLanguage/btnLanguage'
+import SocialEntretenimiento from './../../components/socialEntretenimiento/socialEntretenimiento';
 
 import './entretenimientos.scss'
 
@@ -19,12 +20,14 @@ function Entretenimientos ( props ) {
         <Main>
             <div className="container container-entretenimientos">
                 <div className="page-text">
-                    <Internal title={title} paragraph={paragraph} />
+                    <Internal title={title} paragraph={paragraph} isEntretenimiento={ true } />
                 </div>
                     
                 <div className="page-gallery">
                     <Gallery data={data} title={title} />
                 </div>
+
+                <SocialEntretenimiento from='entretenimiento' />
                     
                 <div className="page-contacto">
                     <BtnContacto />

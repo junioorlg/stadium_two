@@ -1,0 +1,60 @@
+.container-esport {
+    .container-flex-esport{
+        display: flex;
+        
+        .page-text {
+            width: 40%;
+        }
+   
+        .page-gallery {
+            width: 60%;
+            .gallery-component {
+                padding-top: 0;
+            }
+        }
+
+        .page-text {
+            .title-ebro {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+
+                img {
+                    max-width: 90px;
+                }
+
+                h1 {
+                    margin-top: 0;
+                    margin-left: 20px;
+                    font-family: 'GalanoGrotesqueBold';
+                    font-size: 3em;
+                }
+            }
+            .container-title {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+
+            .page-text,
+            .page-gallery {
+                width: 100%;
+            }
+
+            .page-text {
+                .title-ebro {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+        
+    @media screen and (min-width: 769px) {
+        .page-contacto {
+            position: absolute;
+            bottom: 20%;
+        }
+    }
+}

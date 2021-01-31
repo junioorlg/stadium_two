@@ -1,0 +1,40 @@
+.container-icons-entretenimiento {
+    display: inline-block;
+    margin-left: 25px;
+
+    &.from-internal {
+        @media screen and (max-width: 600px) {
+            display: none !important;
+        }
+    }
+
+    &.from-entretenimiento {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        display: none;
+        
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-left: 0px;
+    }
+
+    img {
+        max-width: .9em;
+        margin-right: 6px;
+        transform: translateY(7px);
+
+        @media screen and (max-width: 600px) {
+            margin-top: 5px;
+            transform: translateY(0px);
+        }
+
+        @media screen and (max-width: 330px) {
+            max-width: 1em;
+        }
+    }
+}

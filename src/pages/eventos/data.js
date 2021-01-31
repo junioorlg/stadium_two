@@ -5,10 +5,10 @@ export const data =
 		name: 'Lorem ipsum',
 		anio: 2018,
 		description: 'Lorem ipsum amet, consectetur adipisicing.',
-		isVideo: false,
-		idYoutube: '',
+		isVideo: true,
+		idYoutube: 'CoACh--ETfE',
 		imgSlider: './media/gallery/evento/messi.jpg',
-        imgPreview: './media/gallery/evento/caratula-messi-cuadrado.jpg'
+        imgPreview: ''
 	},
     {
 		id: 2,

@@ -6,7 +6,7 @@ export const data =
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
 		isVideo: true,
-		idYoutube: 'f5omY8jVrSM',
+		idYoutube: 'OdAQrzhXzgY',
 		imgSlider: './media/gallery/entretenimiento/caratula_ezequiel.png',
 		imgPreview: './media/gallery/entretenimiento/caratula_ezequiel.png'
 	},
@@ -21,7 +21,7 @@ export const data =
 		imgPreview: './media/gallery/entretenimiento/octibenn-cuadrado.jpg'
 	},
 	{
-		id: 1,
+		id: 3,
 		name: 'Radio: Oral Deportiva',
 		anio: 2017,
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',

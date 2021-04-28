@@ -31,7 +31,7 @@ class Gallery extends Component {
     componentDidMount() {
 
         const optionsModal = {
-            onOpenStart: () => { this.setState({ isCloseModal: false }) },
+            // onOpenStart: () => { this.setState({ isCloseModal: false }) },
             onCloseStart: () => { this.setState({ isCloseModal: true }) },
             inDuration: 250,
             outDuration: 250,
@@ -44,7 +44,7 @@ class Gallery extends Component {
         M.Modal.init(this.Modal, optionsModal)
     }
 
-    handleChangeElementGallery = (e) => {
+    handleChangeElementGallery = e => {
         const id = parseInt(e.target.getAttribute('data-id'))
         const data = this.props.data
         const slider = data.find(x => x.id === id )
@@ -65,6 +65,8 @@ class Gallery extends Component {
             sliders[i].classList.add('inactive')
 
         e.target.classList.remove('inactive')
+
+        this.setState({ isCloseModal: false })
     }
 
     render() {
@@ -76,8 +78,7 @@ class Gallery extends Component {
             idYoutube, 
             isVideo,
             isCloseModal,
-            dimension,
-            fullColor
+            dimension
         } = this.state
 
         const cantElms = this.props.data.length
@@ -128,6 +129,7 @@ class Gallery extends Component {
                                                         className="box-preview  modal-trigger" 
                                                         href="#modal1"
                                                         onClick={ this.handleChangeElementGallery }
+                                                        data-id={ val.id }
                                                         data-video={ val.isVideo ? '1': '0' } >
                                                         
                                                         <div
@@ -151,10 +153,7 @@ class Gallery extends Component {
                 <div
                     id="modal1"
                     className={'modal ' + classModal}
-                    ref={
-                        Modal => { this.Modal = Modal }
-                    }>
-
+                    ref={ Modal => { this.Modal = Modal }}>
                     <div className="modal-content">
                         <ModalContent 
                             isCloseModal={isCloseModal}
